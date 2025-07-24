@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BB2000</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="/images/flavicon.png" type="image/x-icon">
+</head>
+
+<body>
+ 
+    <div class="wrapper">
+        <!-- nav.html -->
+        <section class="home-header">
+            <div id="nav-container"></div>
+        </section>
+
+    <section class="body">
+        <div class="product-section">
+            <div class="product-content">
+                <div class="product-images">
+                    <img src="/images/workspace/officeequipment/cablemanagement/flexitrt2/flexitrt2black.png" alt="Product Image" class="active-image">
+                    <img src="/images/workspace/officeequipment/cablemanagement/flexitrt2/flexitrt2grey.png" alt="Product Image">
+                    <img src="/images/workspace/officeequipment/cablemanagement/flexitrt2/flexitrt2white.png" alt="Product Image">
+                    <img src="/images/workspace/officeequipment/cablemanagement/flexitrt2/flexitrt2chamber.png" alt="Product Image">
+                    <img src="/images/workspace/officeequipment/cablemanagement/flexitrt2/flexitrt2install.png" alt="Product Image">
+                    <img src="/images/workspace/officeequipment/cablemanagement/flexitrt2/flexitrt2bottom.png" alt="Product Image">
+                    <div class="image-navigation">
+                        <i class="fa fa-chevron-left left-arrow" onclick="prevImage()"></i>
+                        <i class="fa fa-chevron-right right-arrow" onclick="nextImage()"></i>
+                    </div>
+                </div>
+                <div class="product-details">
+                    <h1>Flexit RT2</h1>
+
+                    <h2>€ 699.99</h2>
+                    
+                    <p>Upgrade your workspace with the E-MORE 2M2S table frame. This sleek, electrically height-adjustable frame ensures you can work in comfort whether seated or standing. With square legs and a telescopic width range of 1100 mm to 1800 mm, it provides excellent adaptability for any environment.</p>
+                    
+                    <p>Featuring a dynamic load capacity of 120 kg and a flexible height range from 700 mm to 1200 mm, this frame makes sure you maintain the right posture throughout your workday. The dual-motor system ensures smooth transitions, while the included hand control with an OLED display allows for precise height adjustments. You can save up to 4 personalized heights, which can be easily accessed at the touch of a button. The anti-collision function adds an extra layer of safety when moving the table, and a child safety lock protects against unwanted use.</p>
+                    
+                    <p>Additionally, the E-MORE 2M2S table frame includes a convenient USB charging port on the hand control, so you can charge your devices while you work.</p>
+                    
+                    <h2 id="features-title">Key Features:</h2>
+                    <ul>
+                      <li>Electrically height-adjustable (700–1200 mm)</li>
+                      <li>Square legs for a modern, clean look</li>
+                      <li>Dual motors for smooth, stable transitions</li>
+                      <li>2-stage lifting columns (90x60 mm)</li>
+                      <li>4 programmable height presets</li>
+                      <li>Silent operation at 30 mm/s (&lt;50 dB)</li>
+                      <li>Telescopic crossbar (width: 1100–1800 mm)</li>
+                      <li>Dynamic load capacity: 120 kg</li>
+                      <li>Certified safety with GS mark</li>
+                      <li>Expandable system—cascade up to 12 lifting columns</li>
+                      <li>USB charging port on hand control</li>
+                    </ul>    
+                </div>
+            </div>
+        </div>    
+    </section>
+    </div>
+
+
+    <section class="technical-specs">
+        <h2>
+            <a href="/workspace/docs/emore_2m2s.pdf" target="_blank">Technical Specifications</a>
+        </h2>
+    </section>
+
+    <div id="quote-container"></div>
+
+    <!-- Define product-specific variations -->
+    <script>
+        window.quoteVariations = [
+            "Black",
+            "Grey",
+            "White"
+        ];
+    </script>
+     
+    
+    <!-- Hidden/predefined product data -->
+    <div id="product-info" 
+    data-product-name="Flexit RT2" 
+    data-unit-cost="699.99" 
+    data-vat-rate="18">
+    </div>
+
+    <section class="home-header">
+        <div id="footer-container"></div>
+    </section>
+
+<!-- Link to the external script file -->
+<script src="/script.js"></script>
+<script src="/scriptpdf.js"></script>
+
+</body>
+</html>

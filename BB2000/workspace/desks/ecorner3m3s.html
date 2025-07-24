@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BB2000</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="/images/flavicon.png" type="image/x-icon">
+</head>
+
+<body>
+ 
+    <div class="wrapper">
+        <!-- nav.html -->
+        <section class="home-header">
+            <div id="nav-container"></div>
+        </section>
+
+    <section class="body">
+        <div class="product-section">
+            <div class="product-content">
+                <div class="product-images">
+                    <img src="/images/workspace/desks/ecorner/ecornerblack.png" alt="Product Image" class="active-image">
+                    <img src="/images/workspace/desks/ecorner/ecorneranth.png" alt="Product Image">
+                    <img src="/images/workspace/desks/ecorner/ecornergrey.png" alt="Product Image">
+                    <img src="/images/workspace/desks/ecorner/ecornerwhite.png" alt="Product Image">
+                    <img src="/images/workspace/desks/ecorner/ecornerblack_rotate.png" alt="Product Image">
+                    <img src="/images/workspace/desks/ecorner/ecorneranth_rotate.png" alt="Product Image">
+                    <img src="/images/workspace/desks/ecorner/ecornergrey_rotate.png" alt="Product Image">
+                    <img src="/images/workspace/desks/ecorner/ecornerwhite_rotate.png" alt="Product Image">
+                    <img src="/images/workspace/desks/ecorner/ecornerblack_complete.png" alt="Product Image">
+                    <img src="/images/workspace/desks/ecorner/ecorneranth_complete.png" alt="Product Image">
+                    <img src="/images/workspace/desks/ecorner/ecornergrey_complete.png" alt="Product Image">
+                    <div class="image-navigation">
+                        <i class="fa fa-chevron-left left-arrow" onclick="prevImage()"></i>
+                        <i class="fa fa-chevron-right right-arrow" onclick="nextImage()"></i>
+                    </div>
+                </div>
+                <div class="product-details">
+                    <h1>E-CORNER 3M3S Table Frame</h1>
+                    
+                    <h2>€ 899.99</h2>
+                    
+                    <p>Elevate your workspace with the E-CORNER 3M3S, the electric height-adjustable corner table frame designed to fit any modern office. This versatile frame offers two flexible mounting options: A-90° for classic corners or B-Flex, adjustable from 60° to 180°, allowing you to create a customized workspace that suits your needs.</p>
+                    
+                    <p>With a dynamic load capacity of 180 kg and a height range of 625 mm to 1275 mm, this robust frame is powered by three motors, ensuring smooth and efficient transitions. The five-language OLED control element enables intuitive operation and allows you to save up to four personalized height profiles. Plus, the practical USB-C charging station ensures your devices are always powered and ready to go.</p>
+                    
+                    <p>For added health benefits, the E-CORNER 3M3S includes a reminder function to encourage regular movement between sitting and standing. Safety features like double collision protection, adjustable in eight stages, give you peace of mind while adjusting the desk. Available in four elegant colors, this frame offers a stylish and functional solution for your workstation.</p>
+                 </div>
+            </div>
+        </div>    
+    </section>
+    </div>
+
+    <section class="features-section">
+        <h2 id="features-title">Key Features:</h2>
+        <ul>
+            <li>Electrically height-adjustable (625–1275 mm)</li>
+            <li>Dynamic load capacity: 180 kg</li>
+            <li>Three motors for smooth, stable transitions</li>
+            <li>Three-stage lifting columns (90x60 mm)</li>
+            <li>Two mounting variations: A-90° and B-Flex (60° to 180°)</li>
+            <li>Five-language OLED control with 4 memory locations</li>
+            <li>USB-C charging station for your devices</li>
+            <li>Reminder function for healthier working habits</li>
+            <li>Double collision protection with 8 adjustable stages</li>
+            <li>Available in four elegant colors</li>
+            <li>Silent operation at 40 mm/s (&lt;50 dB)</li>
+          </ul>  
+    </section>  
+
+    <section class="technical-specs">
+        <h2>
+            <a href="/workspace/docs/ecorner_3m3s.pdf" target="_blank">Technical Specifications</a>
+        </h2>
+    </section>
+
+    <div id="quote-container"></div>
+
+    <!-- Define product-specific variations -->
+    <script>
+        window.quoteVariations = [
+            "Black",
+            "Anthdracite",
+            "Grey",
+            "White"
+        ];
+    </script>
+     
+    
+    <!-- Hidden/predefined product data -->
+    <div id="product-info" 
+    data-product-name="E-Corner 3M3S" 
+    data-unit-cost="699.99" 
+    data-vat-rate="18">
+    </div>
+
+    <section class="home-header">
+        <div id="footer-container"></div>
+    </section>
+
+<!-- Link to the external script file -->
+<script src="/script.js"></script>
+<script src="/scriptpdf.js"></script>
+
+</body>
+</html>

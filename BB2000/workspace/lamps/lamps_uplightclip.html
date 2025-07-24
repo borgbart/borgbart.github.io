@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BB2000</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="/images/flavicon.png" type="image/x-icon">
+</head>
+
+<body>
+ 
+    <div class="wrapper">
+        <!-- nav.html -->
+        <section class="home-header">
+            <div id="nav-container"></div>
+        </section>
+
+    <section class="body">
+        <div class="product-section">
+            <div class="product-content">
+                <div class="product-images">
+                    <img src="/images/workspace/lamps/uplightclip/uplightclip_complete.png" alt="Product Image" class="active-image">
+                    <img src="/images/workspace/lamps/uplightclip/uplightclip_black.png" alt="Product Image">
+                    <img src="/images/workspace/lamps/uplightclip/uplightclip_anthracite.png" alt="Product Image">
+                    <img src="/images/workspace/lamps/uplightclip/uplightclip_silver.png" alt="Product Image">
+                    <img src="/images/workspace/lamps/uplightclip/uplightclip_white.png" alt="Product Image">
+                    <img src="/images/workspace/lamps/uplightclip/uplightclip_clip.png" alt="Product Image">
+                    <img src="/images/workspace/lamps/uplightclip/uplightclip_control.png" alt="Product Image">
+                    <img src="/images/workspace/lamps/uplightclip/uplightclip_led.png" alt="Product Image">
+                    <img src="/images/workspace/lamps/uplightclip/uplightclip_sensor.png" alt="Product Image">
+                    <div class="image-navigation">
+                        <i class="fa fa-chevron-left left-arrow" onclick="prevImage()"></i>
+                        <i class="fa fa-chevron-right right-arrow" onclick="nextImage()"></i>
+                    </div>
+                </div>
+                <div class="product-details">
+                    <h1>Uplight Clip</h1>
+                    <h2><i>Space-saving, human-centric lighting—directly mounted to your desk.</i></h2>
+                    <h2>€ 690.00</h2>
+                    <p>The UPLIGHT One BF Clip delivers all the intelligent lighting performance of the original floor version—without taking up any floor space. Mounted directly to your desk via a sturdy clip, it’s the ideal solution for compact work environments or minimalist setups.</p>
+
+                    <p>With ultra-low glare (UGR ≤ 6) and biodynamic light color ranging from 3000K to 6000K, this lamp adapts to your daily rhythm, enhancing concentration and comfort. Intelligent sensors detect motion, distance, and ambient light to automatically adjust brightness throughout your workday.</p>
+                    
+                    <p>The high-performance LED system, powered by Philips SMD3030 chips and a flicker-free Boke driver, provides ≥7,800 lumens of efficient, balanced light (30% direct / 70% indirect), ensuring both task and ambient illumination. Its slim, clean design keeps your desktop clutter-free while delivering over 36,000 hours of powerful, ergonomic lighting.</p>
+                    
+                </div>
+            </div>
+        </div>    
+    </section>
+    </div>
+
+    <section class="features-section">
+        <h2 id="features-title">Key Features:</h2>
+        <ul>
+            <li>Space-saving desk-mounted clip design—no floor base needed</li>
+            <li>Ultra low-glare (UGR &le; 6) with 45°/112° direct/indirect beam angles</li>
+            <li>Color temperature range: 3000K / 4000K / 5000K / 6000K</li>
+            <li>Biodynamic lighting that follows your natural rhythm</li>
+            <li>Daylight, motion, and distance sensors for adaptive brightness</li>
+            <li>LED chips: Philips SMD3030</li>
+            <li>Total luminous flux: ≥7,800 lm</li>
+            <li>CRI > 80</li>
+            <li>Driver: Boke flicker-free</li>
+            <li>Protection class: IP40</li>
+            <li>Operating life: >36,000 hours</li>
+          </ul>
+    </section>  
+
+    <section class="technical-specs">
+        <h2>
+            <a href="/workspace/docs/uplight.pdf" target="_blank">Catalogue</a>
+        </h2>
+    </section>
+
+    <section class="technical-specs">
+        <h2>
+            <a href="/workspace/docs/uplightclip.pdf" target="_blank">Technical Specifications</a>
+        </h2>
+    </section>
+
+    <div id="quote-container"></div>
+
+    <!-- Define product-specific variations -->
+    <script>
+        window.quoteVariations = [
+            "Black",
+            "Anthracite",
+            "Grey",
+            "White"
+        ];
+    </script>
+     
+    
+    <!-- Hidden/predefined product data -->
+    <div id="product-info" 
+    data-product-name="Uplight Clip" 
+    data-unit-cost="699.99" 
+    data-vat-rate="18">
+    </div>
+
+    <section class="home-header">
+        <div id="footer-container"></div>
+    </section>
+
+<!-- Link to the external script file -->
+<script src="/script.js"></script>
+<script src="/scriptpdf.js"></script>
+</body>
+</html>

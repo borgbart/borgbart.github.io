@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BB2000</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="/images/flavicon.png" type="image/x-icon">
+</head>
+
+<body>
+ 
+    <div class="wrapper">
+        <!-- nav.html -->
+        <section class="home-header">
+            <div id="nav-container"></div>
+        </section>
+
+    <section class="body">
+        <div class="product-section">
+            <div class="product-content">
+                <div class="product-images">
+                    <img src="/images/workspace/desks/emuro1m2s/emuroblack.png" alt="Product Image" class="active-image">
+                    <img src="/images/workspace/desks/emuro1m2s/emurowhite.png" alt="Product Image">
+                    <img src="/images/workspace/desks/emuro1m2s/emurodesk.png" alt="Product Image">
+                    <img src="/images/workspace/desks/emuro1m2s/emurodeskfold.png" alt="Product Image">
+                    <img src="/images/workspace/desks/emuro1m2s/emurotop.png" alt="Product Image">
+                    <img src="/images/workspace/desks/emuro1m2s/emurofold.png" alt="Product Image">
+                    <img src="/images/workspace/desks/emuro1m2s/emuromount.png" alt="Product Image">
+                    <img src="/images/workspace/desks/emuro1m2s/emurocontrollerusb.png" alt="Product Image">
+                    <img src="/images/workspace/desks/emuro1m2s/emurocontroller.png" alt="Product Image">
+                    <div class="image-navigation">
+                        <i class="fa fa-chevron-left left-arrow" onclick="prevImage()"></i>
+                        <i class="fa fa-chevron-right right-arrow" onclick="nextImage()"></i>
+                    </div>
+                </div>
+                <div class="product-details">
+                    <h1>E-Muro 1M2S Table Frame</h1>
+                    <h2><i>Space-saving design with effortless flexibility.</i></h2>
+                    <h2>€ 399.99</h2>
+
+                    <p>The E-MURO 1M2S table frame brings smart design and convenience into your workspace. This versatile, wall-mounted frame allows you to easily create a customized setup with table tops ranging from 40 x 40 cm to 60 x 100 cm—perfect for compact spaces or larger areas alike.</p>
+
+                    <p>At the touch of a button, smoothly transition between sitting and standing positions. Thanks to its quiet operation under 50 dB, you can maintain a peaceful work atmosphere. Safety is built in, with an anti-collision function and a child lock feature that makes it ideal for homes, studios, or shared environments.</p>
+
+                    <p>The integrated height reminder encourages healthy posture throughout the day, while built-in USB-A ports keep your devices charged and within easy reach. With a sturdy two-segment lifting column powered by a single motor, the frame supports up to 80 kg with ease.</p>
+
+                    <p>Compact, foldable, and designed for real life, the E-MURO 1M2S helps you create a flexible, efficient workspace tailored perfectly to your needs.</p>
+                 </div>
+            </div>
+        </div>    
+    </section>
+    </div>
+
+    <section class="features-section">
+        <h2 id="features-title">Key Features:</h2>
+        <ul>
+            <li>Wall-mounted and foldable design</li>
+            <li>Electrically height-adjustable with a single motor</li>
+            <li>Two-segment lifting column for stability</li>
+            <li>Three memory keys for personalized height settings</li>
+            <li>Anti-collision function for safe adjustments</li>
+            <li>Noise level under 50 dB for a quiet environment</li>
+            <li>Integrated height reminder for better posture</li>
+            <li>Built-in USB-A ports for device charging</li>
+            <li>Supports table tops from 40x40 cm to 60x100 cm</li>
+            <li>Dynamic load capacity: 80 kg</li>
+            </ul>
+    </section> 
+
+    <section class="technical-specs">
+        <h2>
+            <a href="/workspace/docs/emuro1m2s.pdf" target="_blank">Technical Specifications</a>
+        </h2>
+    </section>
+
+    <div id="quote-container"></div>
+
+    <!-- Define product-specific variations -->
+    <script>
+        window.quoteVariations = [
+            "Black",
+            "White"
+        ];
+    </script>
+     
+    
+    <!-- Hidden/predefined product data -->
+    <div id="product-info" 
+    data-product-name="E-Muro 1M2S" 
+    data-unit-cost="399.99" 
+    data-vat-rate="18">
+    </div>
+
+    <section class="home-header">
+        <div id="footer-container"></div>
+    </section>
+
+<!-- Link to the external script file -->
+<script src="/script.js"></script>
+<script src="/scriptpdf.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BB2000</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="/images/flavicon.png" type="image/x-icon">
+</head>
+
+<body>
+ 
+    <div class="wrapper">
+        <!-- nav.html -->
+        <section class="home-header">
+            <div id="nav-container"></div>
+        </section>
+
+    <section class="body">
+        <div class="product-section">
+            <div class="product-content">
+                <div class="product-images">
+                    <img src="/images/workspace/desks/emore2m3sgd/emore2m3sblack.png" alt="Product Image" class="active-image">
+                    <img src="/images/workspace/desks/emore2m3sgd/emore2m3santh.png" alt="Product Image">
+                    <img src="/images/workspace/desks/emore2m3sgd/emore2m3sgrey.png" alt="Product Image">
+                    <img src="/images/workspace/desks/emore2m3sgd/emore2m3swhite.png" alt="Product Image">
+                    <img src="/images/workspace/desks/emorecontroller.png" alt="Product Image">
+                    <div class="image-navigation">
+                        <i class="fa fa-chevron-left left-arrow" onclick="prevImage()"></i>
+                        <i class="fa fa-chevron-right right-arrow" onclick="nextImage()"></i>
+                    </div>
+                </div>
+                <div class="product-details">
+                    <h1>E-MORE 2M3S GS Table Frame</h1>
+                    <h2>€ 699.99</h2>
+
+                    <p>Transform your workspace with the E-MORE 2M3S GS — where premium design meets ultimate flexibility. This sleek, TÜV-certified steel frame with square legs is crafted for modern professionals who demand both style and function. Whether you're sitting, standing, or somewhere in between, the dual-motor system and telescopic width adjustment (from 1100 mm to 1800 mm) offer seamless adaptability at the touch of a button.</p>
+
+                    <p>Program up to four personalized heights and transition smoothly between them with whisper-quiet operation (&lt;50 dB). Built-in safety features like anti-collision and a child lock offer peace of mind, while the side-mounted USB port keeps your devices powered throughout the day.</p>
+                </div>
+            </div>
+        </div>    
+    </section>
+    </div>
+
+    <section class="features-section">
+        <h2 id="features-title">Key Features:</h2>
+            <ul>
+            <li>Effortless electric height adjustment (625 - 1275 mm)</li>
+            <li>Dual motors for smooth, stable transitions</li>
+            <li>4 programmable height presets</li>
+            <li>Silent movement at 40 mm/s</li>
+            <li>Telescopic crossbar for customized table width</li>
+            <li>Durable dynamic load capacity of 120 kg</li>
+            <li>Certified safety with GS mark</li>
+            <li>Expandable system—cascade up to 12 lifting columns</li>
+            <li>Integrated USB charging port</li>
+            </ul>
+    </section> 
+
+    <section class="technical-specs">
+        <h2>
+            <a href="/workspace/docs/emore_2m3sgs.pdf" target="_blank">Technical Specifications</a>
+        </h2>
+    </section>
+
+    <div id="quote-container"></div>
+
+    <!-- Define product-specific variations -->
+    <script>
+        window.quoteVariations = [
+            "Black",
+            "Anthracite",
+            "Grey",
+            "White"
+        ];
+    </script>
+     
+    
+    <!-- Hidden/predefined product data -->
+    <div id="product-info" 
+    data-product-name="E-More 2M3S GS" 
+    data-unit-cost="699.99" 
+    data-vat-rate="18">
+    </div>
+
+    <section class="home-header">
+        <div id="footer-container"></div>
+    </section>
+
+<!-- Link to the external script file -->
+<script src="/script.js"></script>
+<script src="/scriptpdf.js"></script>
+
+</body>
+</html>

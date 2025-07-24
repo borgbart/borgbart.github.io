@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BB2000</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="/images/flavicon.png" type="image/x-icon">
+</head>
+
+<body>
+ 
+    <div class="wrapper">
+        <!-- nav.html -->
+        <section class="home-header">
+            <div id="nav-container"></div>
+        </section>
+
+    <section class="body">
+        <div class="product-section">
+            <div class="product-content">
+                <div class="product-images">
+                    <img src="/images/workspace/desks/vitro/Vitrocomplete.png" alt="Product Image" class="active-image">
+                    <img src="/images/workspace/desks/vitro/vitrodrawer.png" alt="Product Image">
+                    <img src="/images/workspace/desks/vitro/vitro_control.png" alt="Product Image">
+                    <img src="/images/workspace/desks/vitro/vitrowireless.png" alt="Product Image">
+                    <img src="/images/workspace/desks/vitro/vitro_ports.png" alt="Product Image">
+                    <div class="image-navigation">
+                        <i class="fa fa-chevron-left left-arrow" onclick="prevImage()"></i>
+                        <i class="fa fa-chevron-right right-arrow" onclick="nextImage()"></i>
+                    </div>
+                </div>
+                <div class="product-details">
+                    <h1>VITRO 2M2S</h1>
+                    <h2><i>Stylish design meets high-end functionality.</i></h2>
+                    <h2>€ 799.99</h2>
+
+                    <p>The VITRO 2M2S desk combines modern design with advanced functionality. Its elegant glass top (120x60 cm) in RAL 9017, Traffic black, adds a sleek look to any office or home workspace. With electric height adjustment (710 mm to 1210 mm), it offers the flexibility to work seated or standing.</p>
+
+                    <p>With a load capacity of 100 kg, the desk is stable even when adjusting heights. The integrated control panel in the glass top features 3 memory keys, allowing you to save your preferred settings for easy access. You can charge your devices wirelessly (10W) or via 2x USB-A and 1x USB-C ports built into the desk.</p>
+                    
+                    <p>Safety is key, with a child safety lock and an anti-collision function that ensure safe and secure use. The VITRO 2M2S desk is a perfect blend of style, functionality, and peace of mind for your workspace.</p>
+                </div>
+            </div>
+        </div>    
+    </section>
+    </div>
+
+    <section class="features-section">
+        <h2 id="features-title">Key Features:</h2>
+        <ul>
+            <li>Electrically height-adjustable (710–1210 mm)</li>
+            <li>Elegant glass top (120x60 cm) in RAL 9017, Traffic black</li>
+            <li>Dynamic load capacity: 100 kg</li>
+            <li>Wireless charging (10W) integrated into the desk</li>
+            <li>Control panel integrated in glass top with 3 memory keys</li>
+            <li>Child safety lock for peace of mind</li>
+            <li>Anti-collision function for safe movement</li>
+            <li>Ports for 2x USB-A and 1x USB-C charging</li>
+            <li>24-month guarantee</li>
+        </ul>
+    </section>  
+
+    <section class="technical-specs">
+        <h2>
+            <a href="/workspace/docs/vitro.pdf" target="_blank">Catalogue</a>
+        </h2>
+    </section>
+
+    <section class="technical-specs">
+        <h2>
+            <a href="/workspace/docs/vitro_technical.pdf" target="_blank">Technical Specifications</a>
+        </h2>
+    </section>
+
+    <div id="quote-container"></div>
+
+    <!-- Define product-specific variations -->
+    <script>
+        window.quoteVariations = [
+            "VITRO"
+        ];
+    </script>
+     
+    
+    <!-- Hidden/predefined product data -->
+    <div id="product-info" 
+    data-product-name="VITRO" 
+    data-unit-cost="799.99" 
+    data-vat-rate="18">
+    </div>
+
+    <section class="home-header">
+        <div id="footer-container"></div>
+    </section>
+
+<!-- Link to the external script file -->
+<script src="/script.js"></script>
+<script src="/scriptpdf.js"></script>
+
+</body>
+</html>

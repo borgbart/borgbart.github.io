@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BB2000</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="/images/flavicon.png" type="image/x-icon">
+
+</head>
+
+<style>
+    /* Same styles as before */
+    body {
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+        background-color: #F7EEE6 !important;
+    }
+
+    .mandelli {
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%; /* Ensures responsiveness */
+        height: auto;
+    }
+</style>
+
+<body>
+
+    <div class="wrapper">
+        <!-- nav.html -->
+        <section class="home-header">
+            <div id="nav-container"></div>
+        </section>
+
+        <section>
+            <picture class="mandelli">
+                <source media="(min-width: 768px)" srcset="/images/Handles/mandellilogo.png">
+                <img src="/images/Handles/mandellimobile.png" alt="Welcome Image" class="mandelli">
+            </picture>
+        </section>
+
+        <section class="body">
+            <div class="product-sectionmandelli">
+                <div class="product-contentmandelli">
+                    <div class="product-imagesmandelli">
+                        <img src="/images/Handles/doorhandles/juno/juno_ash.png" alt="Product Image" class="active-image">
+                        <img src="/images/Handles/doorhandles/juno/juno_blush.png" alt="Product Image">
+                        <img src="/images/Handles/doorhandles/juno/juno_dove.png" alt="Product Image">
+                        <img src="/images/Handles/doorhandles/juno/juno_graphite.png" alt="Product Image">
+                        <img src="/images/Handles/doorhandles/juno/juno_sand.png" alt="Product Image">
+                        <div class="image-navigation">
+                            <i class="fa fa-chevron-left left-arrow" onclick="prevImage()"></i>
+                            <i class="fa fa-chevron-right right-arrow" onclick="nextImage()"></i>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h1>Juno</h1>
+                        <h2>€ 199.99</h2>
+                        <h4>Design: Alessandro Dubini</h4>
+                        <p>A concept born from the desire to use an unconventional material as a protagonist to make handles: concrete. The almost ancestral production recalls the ancient technique of forging with molds and casting of a solid body: the final aesthetic result of Juno- this is the name chosen for the new handle- is of great visual impact, but at the same time the design is very clean and minimalist. Winner of GOOD DESIGN AWARD 2017.</p>
+                    </div>
+                </div>
+            </div>    
+        </section>
+    </div>
+
+    <section class="technical-specs">
+        <h2>
+            <a href="/images/handles/doorhandles/docs/Juno.pdf" target="_blank">Technical Specifications</a>
+        </h2>
+    </section>
+
+    <div id="quote-container"></div>
+
+    <!-- Define product-specific variations -->
+    <script>
+        window.quoteVariations = [
+            "Ash",
+            "Blush",
+            "Concrete",
+            "Dove",
+            "Sand"
+        ];
+    </script>
+     
+    
+    <!-- Hidden/predefined product data -->
+<div id="product-info" 
+data-product-name="Juno Door Handle" 
+data-unit-cost="199.99" 
+data-vat-rate="18">
+</div>
+
+    
+    <section class="home-header">
+        <div id="footer-container"></div>
+    </section>
+
+    <!-- Link to the external script file -->
+    <script src="/script.js"></script>
+    <script src="/scriptpdf.js"></script>
+      
+</body>
+</html>

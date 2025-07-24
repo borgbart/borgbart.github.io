@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BB2000</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="/images/flavicon.png" type="image/x-icon">
+</head>
+
+<style>
+    body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    background-color: #F7EEE6 !important;
+    }
+
+    .mandelli {
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%; /* Ensures responsiveness */
+        height: auto;
+    }
+
+    .text-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    }
+
+    .text-section h2 {
+    font-weight: bold;
+    font-size: 1.5rem; /* Medium font size */
+    color:#231F20
+    }
+
+    .text-section p {
+    font-size: 1rem; /* Smaller font size */
+    font-style: italic;
+    text-align: justify;
+    max-width: 600px; /* Prevents overly wide text */
+    color:black
+    }
+
+
+</style>
+
+<body>
+    <div class="wrapper">
+        <!-- nav.html -->
+        <section class="home-header">
+            <div id="nav-container"></div>
+        </section>
+    
+        <section>
+            <picture  class="mandelli">
+              <!-- Web Version Image -->
+              <source media="(min-width: 768px)" srcset="/images/Handles/mandellilogo.png">
+              <!-- Mobile Version Image -->
+              <img src="/images/Handles/mandellimobile.png" alt="Welcome Image"  class="mandelli">
+            </picture>
+        </section>
+
+        <section class="text-section">
+            <h2>Design in your hands.</h2>
+            <p>
+              <em>For over sixty years we have been designing and manufacturing brass handles. Excellent quality, creativity and continuous research for a highly reliable product of high aesthetic value, entirely processed in Italy.</em>
+            </p>
+          </section>
+
+          <section class="body" >
+            <div class="row"> 
+                <div class="col">
+                    <a href="/lifestyle/handles/doorhandles.html" class="product-link">
+                        <div class="button" id="standard">
+                            <div class="image-default">
+                                <img src="/images/Handles/doorhandles.png" alt="">
+                            </div>
+                            <div class="layer">
+                                <h3>Door Handles</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="/lamps.html" class="product-link">
+                        <div class="button" id="adjustable">
+                            <div class="image-default">
+                                <img src="/images/Handles/pullhandles.png" alt="">
+                            </div>
+                            <div class="layer">
+                                <h3>Pull Handles</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="/officeequipment.html" class="product-link">
+                        <div class="button" id="custom">
+                            <div class="image-default">
+                                <img src="/images/Handles/windowhandles.png" alt="">
+                            </div>
+                            <div class="layer">
+                                <h3>Window Handles</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="/officeequipment.html" class="product-link">
+                        <div class="button" id="custom">
+                            <div class="image-default">
+                                <img src="/images/Handles/doorknobs.png" alt="">
+                            </div>
+                            <div class="layer">
+                                <h3>Door Knobs</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="/officeequipment.html" class="product-link">
+                        <div class="button" id="custom">
+                            <div class="image-default">
+                                <img src="/images/Handles/slidinghandles.png" alt="">
+                            </div>
+                            <div class="layer">
+                                <h3>Sliding Handles</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section class="home-header">
+        <div id="footer-container"></div>
+    </section>
+
+<!-- Link to the external script file -->
+<script src="/script.js"></script>
+</body>
+</html>

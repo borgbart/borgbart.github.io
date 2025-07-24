@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BB2000</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="/images/flavicon.png" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+</head>
+
+<style>
+    /* Same styles as before */
+    body {
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+        background-color: #F7EEE6 !important;
+    }
+
+    .mandelli {
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%; /* Ensures responsiveness */
+        height: auto;
+    }
+</style>
+
+<body>
+
+    <div class="wrapper">
+        <!-- nav.html -->
+        <section class="home-header">
+            <div id="nav-container"></div>
+        </section>
+
+        <section>
+            <picture class="mandelli">
+                <source media="(min-width: 768px)" srcset="/images/Handles/mandellilogo.png">
+                <img src="/images/Handles/mandellimobile.png" alt="Welcome Image" class="mandelli">
+            </picture>
+        </section>
+
+        <section class="body">
+            <div class="product-sectionmandelli">
+                <div class="product-contentmandelli">
+                    <div class="product-imagesmandelli">
+                        <img src="/images/Handles/doorhandles/40+1/40+1_chrome.png" alt="Product Image" class="active-image">
+                        <img src="/images/Handles/doorhandles/40+1/40+1_graphite.png" alt="Product Image">
+                        <img src="/images/Handles/doorhandles/40+1/40+1_nickel.png" alt="Product Image">
+                        <div class="image-navigation">
+                            <i class="fa fa-chevron-left left-arrow" onclick="prevImage()"></i>
+                            <i class="fa fa-chevron-right right-arrow" onclick="nextImage()"></i>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h1>40+1</h1>
+                        <h2>€ 199.99</h2>
+                        <h4>Design: Lorenzo Ponzelli / Francesco Valentini</h4>
+                        <p>Made by Lorenzo Ponzelli and Francesco Valentini who worked on the concept of clean lines but present with character, trying to make it elegant with simplicity. For this reason we made the tapered shape from the base point where it’s fixed to the door, up to the tip, and at the same time folded inside so as to play with lights and shadows to represent the cut facet of the precious stones. The tip, on the other hand, perfectly shares the 40 degree inclination of the Eclisse 40 frame. The upper and lower inward fold gives an excellent ergonomic grip, which makes it almost unique in the panorama of squared lined handles.</p>
+                    </div>
+                </div>
+            </div>    
+        </section>
+    </div>
+
+    <section class="technical-specs">
+        <h2>
+            <a href="/images/handles/doorhandles/docs/40+1.pdf" target="_blank">Technical Specifications</a>
+        </h2>
+    </section>
+
+    <div id="quote-container"></div>
+
+    <!-- Define product-specific variations -->
+    <script>
+        window.quoteVariations = [
+            "Chrome",
+            "Graphite",
+            "Nickel"
+        ];
+    </script>
+     
+    
+    <!-- Hidden/predefined product data -->
+<div id="product-info" 
+data-product-name="40+1 Door Handle" 
+data-unit-cost="199.99" 
+data-vat-rate="18">
+</div>
+
+    
+    <section class="home-header">
+        <div id="footer-container"></div>
+    </section>
+
+    <!-- Link to the external script file -->
+    <script src="/script.js"></script>
+    <script src="/scriptpdf.js"></script>
+      
+</body>
+</html>

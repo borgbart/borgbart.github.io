@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BB2000</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="/images/flavicon.png" type="image/x-icon">
+</head>
+
+<body>
+ 
+    <div class="wrapper">
+        <!-- nav.html -->
+        <section class="home-header">
+            <div id="nav-container"></div>
+        </section>
+
+    <section class="body">
+        <div class="product-section">
+            <div class="product-content">
+                <div class="product-images">
+                    <img src="/images/workspace/desks/emono1m3s/emonoblack.png" alt="Product Image" class="active-image">
+                    <img src="/images/workspace/desks/emono1m3s/emonogrey.png" alt="Product Image">
+                    <img src="/images/workspace/desks/emono1m3s/emonowhite.png" alt="Product Image">
+                    <img src="/images/workspace/desks/emono1m3s/emonofront.png" alt="Product Image">
+                    <img src="/images/workspace/desks/emono1m3s/emonoside.png" alt="Product Image">
+                    <img src="/images/workspace/desks/emono1m3s/emonotop.png" alt="Product Image">
+                    <img src="/images/workspace/desks/emono1m3s/emonobase.png" alt="Product Image">
+                    <img src="/images/workspace/desks/emono1m3s/emonocontrollerusb.png" alt="Product Image">
+                    <img src="/images/workspace/desks/emono1m3s/emonocontroller.png" alt="Product Image">
+                    <div class="image-navigation">
+                        <i class="fa fa-chevron-left left-arrow" onclick="prevImage()"></i>
+                        <i class="fa fa-chevron-right right-arrow" onclick="nextImage()"></i>
+                    </div>
+                </div>
+                <div class="product-details">
+                    <h1>E-MONO 1M3S Table Frame</h1>
+                    <h2><i>Freedom to work wherever inspiration strikes.</i></h2>
+                    <h2>€ 399.99</h2>
+
+                    <p>The E-MONO 1M3S table frame offers ultimate mobility and flexibility for modern workspaces. Equipped with smooth-rolling castors, it allows you to effortlessly move your workstation between rooms or areas, adapting easily to your workflow needs.</p>
+
+                    <p>Thanks to the optional battery pack, you're no longer tied to a power outlet. Create your perfect environment without worrying about cables, and enjoy the stability provided by the sturdy 3-part lifting column, built for everyday use and lasting durability.</p>
+
+                    <p>The intuitive handset with three memory settings makes it easy to adjust your preferred working height with a single touch. Safety features like eight-level collision protection and a child lock make it ideal for both professional spaces and home offices.</p>
+
+                    <p>Enjoy quiet transitions with a noise level under 50 dB, and conveniently charge your devices using the built-in USB-A ports. The E-MONO 1M3S accommodates table tops from 40 x 40 cm to 60 x 100 cm, providing flexibility for all kinds of tasks, from brainstorming sessions to daily admin work. With a load capacity of 80 kg, it easily supports all your essentials.</p>
+                </div>
+            </div>
+        </div>    
+    </section>
+    </div>
+
+    <section class="features-section">
+        <h2 id="features-title">Key Features:</h2>
+        <ul>
+            <li>Mobile design with smooth-rolling castors</li>
+            <li>Optional battery pack for true wireless operation</li>
+            <li>Sturdy 3-part lifting column for maximum stability</li>
+            <li>Handset with 3 memory settings</li>
+            <li>Eight-level collision protection and child safety lock</li>
+            <li>Noise level under 50 dB for quiet operation</li>
+            <li>Built-in USB-A ports for convenient device charging</li>
+            <li>Supports table tops from 40x40 cm up to 60x100 cm</li>
+            <li>Dynamic load capacity: 80 kg</li>
+            <li>Available in Traffic Black, White Aluminium, and Pure White</li>
+        </ul>
+    </section>  
+
+    <section class="technical-specs">
+        <h2>
+            <a href="/workspace/docs/emono1m3s.pdf" target="_blank">Technical Specifications</a>
+        </h2>
+    </section>
+
+    <div id="quote-container"></div>
+
+    <!-- Define product-specific variations -->
+    <script>
+        window.quoteVariations = [
+            "Black",
+            "Grey",
+            "White"
+        ];
+    </script>
+     
+    
+    <!-- Hidden/predefined product data -->
+    <div id="product-info" 
+    data-product-name="E-Mono 1M3S" 
+    data-unit-cost="399.99" 
+    data-vat-rate="18">
+    </div>
+
+    <section class="home-header">
+        <div id="footer-container"></div>
+    </section>
+
+<!-- Link to the external script file -->
+<script src="/script.js"></script>
+<script src="/scriptpdf.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BB2000</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="/images/flavicon.png" type="image/x-icon">
+</head>
+
+<style>
+    /* CSS Styles */
+    .contact-us-page {
+        padding: 30px 50px; /* Added padding */
+    }
+
+    .title {
+        text-align: center; /* Center align the title */
+    }
+
+    .contact-info {
+        text-align: center;
+        padding: 0px 20px;
+    }
+
+    .contact-us-page p {
+    margin-top: 30px;
+    color: #22333B;
+    text-align: center;
+    margin-bottom: 50px;
+    line-height: 2; /* Increase line-height for more space between lines */
+    }
+
+    .contact-us-page p br {
+        display: block; /* Makes <br> act like a block element */
+        margin-bottom: 20px; /* Adds space below each line break */
+    }
+
+
+    /* Add padding above the main title on the Contact Us page */
+    .contact-us-page .title {
+        padding-top: 20px; /* Adjust the value as needed */
+    }
+
+    /* Specific styles to remove padding for mobile on certain pages */
+    @media (max-width: 576px) {
+        .contact-us-page p,
+        .terms-conditions-page p,
+        .contact-us-page p {
+            padding: 0;
+        }
+    }
+</style>
+
+<body>
+    <div class="wrapper">
+        <!-- nav.html -->
+        <section class="home-header">
+            <div id="nav-container"></div>
+        </section>
+    
+        <section>
+        <!-- Contact Us Page Content -->
+        <div class="contact-us contact-us-page"> <!-- Added contact-us-page class -->
+            <div class="container">
+                <h1 class="title">Contact Us</h1>
+                <div class="contact-info">
+                    <p style="font-size: larger;">Email: test@gmail.com
+                    <br>Mobile: +365 9999 9999
+                    <br>Whatsapp: +365 9999 8888
+                    <br>facebook: test.facebook</p>
+                </div>
+            </div>
+        </div>
+        <!-- End of Contact Us Page Content -->
+        </section>
+
+        
+    </div>
+
+    <section class="home-header">
+        <div id="footer-container"></div>
+    </section>
+
+<!-- Link to the external script file -->
+<script src="/script.js"></script>
+</body>
+</html>

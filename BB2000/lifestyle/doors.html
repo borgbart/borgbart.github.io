@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BB2000</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="/images/flavicon.png" type="image/x-icon">
+</head>
+
+<style>
+
+    .celegon {
+            padding-top: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 100%; /* Ensures responsiveness */
+            height: auto;
+            padding-bottom: 0px !important ;
+        }
+    
+    .text-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 30px;
+        padding-bottom: 0px !important ;
+        }
+    
+        .text-section p {
+        font-size: 1.5rem; /* Smaller font size */
+        font-style: italic;
+        text-align: center;
+        max-width: 600px; /* Prevents overly wide text */
+        color:black
+        }
+    
+    </style>
+
+<body>
+    <div class="wrapper">
+        <!-- nav.html -->
+        <section class="home-header">
+            <div id="nav-container"></div>
+        </section>
+    
+        <section>
+            <picture  class="celegon">
+              <!-- Web Version Image -->
+              <source media="(min-width: 768px)" srcset="/images/doors/celegon.png">
+              <!-- Mobile Version Image -->
+              <img src="/images/doors/celegon.png" alt="Welcome Image"  class="bmb">
+            </picture>
+        </section>
+
+        <section class="text-section">
+            <p>
+              <em></em>
+            </p>
+        </section>
+
+        <section class="body">
+            <div class="row">
+                <!-- Individual Product 1 with Sale -->
+        <div class="col">
+            <a href="/lifestyle/doors/ergon.html" class="product-link">
+                <div class="button" id="product1">
+                    <div class="image-default">
+                        <img src="/images/doors/doors.png" alt="Product 1">
+                    </div>
+                    <div class="layer">
+                        <h3>Pivot Doors</h3>
+                        <!-- Price Display -->
+                        <div class="price">
+                            <span class="standard-price"> from $799.99</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- Individual Product 2 without Sale -->
+        <div class="col">
+            <a href="/lifestyle/doors/compack90.html" class="product-link">
+                <div class="button" id="product2">
+                    <div class="image-default">
+                        <img src="/images/doors/compack90.png" alt="Product 2">
+                    </div>
+                    <div class="layer">
+                        <h3>Folding Doors 90°</h3>
+                        <!-- Price Display -->
+                        <div class="price">
+                            <span class="standard-price"> from $899.99</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+                <!-- Individual Product 2 (Example) -->
+                <div class="col">
+                    <a href="/lifestyle/doors/compack180.html" class="product-link">
+                        <div class="button" id="product2">
+                            <div class="image-default">
+                                <img src="/images/doors/compack180.png" alt="Product 2">
+                            </div>
+                            <div class="layer">
+                                <h3>Folding Doors 180°</h3>
+                                <!-- Price Display -->
+                                <div class="price">
+                                    <span class="standard-price"> from $899.99</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Individual Product 2 (Example) -->
+                <div class="col">
+                    <a href="/product.html" class="product-link">
+                        <div class="button" id="product2">
+                            <div class="image-default">
+                                <img src="/images/desks.png" alt="Product 2">
+                            </div>
+                            <div class="layer">
+                                <h3>Folding Doors Triple</h3>
+                                <!-- Price Display -->
+                                <div class="price">
+                                    <span class="original-price">$249.99</span>
+                                    <span class="new-price">$199.99</span> <!-- Sale price -->
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Individual Product 2 (Example) -->
+                <div class="col">
+                    <a href="/product.html" class="product-link">
+                        <div class="button" id="product2">
+                            <div class="image-default">
+                                <img src="/images/desks.png" alt="Product 2">
+                            </div>
+                            <div class="layer">
+                                <h3>Sliding Doors</h3>
+                                <!-- Price Display -->
+                                <div class="price">
+                                    <span class="original-price">$249.99</span>
+                                    <span class="new-price">$199.99</span> <!-- Sale price -->
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <section class="home-header">
+        <div id="footer-container"></div>
+    </section>
+
+<!-- Link to the external script file -->
+<script src="/script.js"></script>
+</body>
+</html>
