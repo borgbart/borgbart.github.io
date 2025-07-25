@@ -101,7 +101,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const product = document.getElementById("productinput");
             if (product) {
-                product.value = product.dataset.productName;
+                const productInfo = document.getElementById("product-info");
+                product.value = productInfo.dataset.productName;
             }
         });
 });
