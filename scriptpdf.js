@@ -98,5 +98,10 @@ document.addEventListener("DOMContentLoaded", () => {
                     select.appendChild(option);
                 });
             }
+
+            const product = document.getElementById("productinput");
+            if (product) {
+                product.value = product.dataset.productName;
+            }
         });
 });
