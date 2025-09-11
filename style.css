@@ -1166,4 +1166,192 @@ p {
     text-align: center;
     margin-top: 10px;
   }
+
+
+  .product-details h3 {
+    font-size: 1.2em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    text-align: left;
+  }
+  
+  .product-details p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  /* UPOD Info Section */
+    .upod-info {
+      max-width: 1200px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+    
+    .upod-info h2 {
+      text-align: center;
+      font-size: 2em;
+      margin-bottom: 40px;
+      font-weight: 600;
+    }
+    
+    /* Remove background, padding, borders, and shadows */
+    .upod-info-block {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      margin-bottom: 50px;
+      flex-wrap: wrap; /* for mobile */
+      background: transparent;
+      padding: 0;
+      border-radius: 0;
+      box-shadow: none;
+    }
+    
+    .upod-text {
+      flex: 1 1 200px;
+    }
+    
+    .upod-text h3 {
+      font-size: 1.5em;
+      margin-bottom: 15px;
+      font-weight: 500;
+    }
+    
+    .upod-text p {
+      font-size: 1em;
+      line-height: 1.6;
+      color: #333;
+    }
+    
+    .upod-image {
+      flex: 1 1 300px;
+      background: transparent;
+      padding: 0;
+      border-radius: 0;
+      box-shadow: none;
+    }
+    
+    .upod-image img {
+      width: 120%;
+      max-width: 800px;
+      height: auto;
+      display: block;
+      border-radius: 0; /* remove rounded corners */
+      box-shadow: none; /* remove shadow */
+    }
+    
+    /* Default: show desktop image, hide mobile image */
+    .upod-image .desktop-img {
+      display: block;
+    }
+    
+    .upod-image .mobile-img {
+      display: none;
+    }
+    
+    /* Responsive for mobile */
+    
+    @media (max-width: 768px) {
+  
+      .product-details h3 {
+    text-align: center;
+  }
+      .upod-info-block {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 0px;
+      }
+    
+      .upod-image img {
+        max-width: 90%;
+        margin: 0 auto;
+        background: transparent;
+        border-radius: 0;
+        box-shadow: none;
+      }
+    
+      .upod-image .desktop-img {
+        display: none;
+      }
+    
+      .upod-image .mobile-img {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+      }
+    }
+  
+    /* FEATURES / SPECIFICATIONS SECTION */
+  .upod-features-section {
+    max-width: 1400px; /* wider on web */
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  
+  .upod-features-section h2 {
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  /* SPEC BLOCK */
+  .upod-product-spec-block {
+    margin-bottom: 20px;
+    padding: 0; /* no padding for cleaner look */
+    background: transparent; /* no background */
+    box-shadow: none; /* no shadow */
+    border-radius: 0; /* remove corners */
+  }
+  
+  /* SPEC TEXT */
+  .upod-spec-text h3 {
+    font-size: 1.15em;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #222;
+  }
+  
+  .upod-spec-text ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0;
+  
+  }
+  
+  .upod-spec-text ul li {
+    font-size: 0.95em;
+    line-height: 1.5;
+    color: #555;
+    margin-bottom: 6px;
+  }
+  
+  /* RESPONSIVE ADJUSTMENTS */
+  @media (max-width: 1024px) {
+    .upod-features-section {
+      max-width: 1000px; /* reduce width for smaller desktops/tablets */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .upod-features-section {
+      padding: 0 15px;
+    }
+  
+    .upod-features-section h2 {
+      font-size: 1.4em;
+    }
+  
+    .upod-spec-text h3 {
+      font-size: 1em;
+    }
+  
+    .upod-spec-text ul li {
+      font-size: 0.85em;
+    }
+  }
   

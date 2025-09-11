@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Working Pod S - BB2000</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="/images/flavicon.png" type="image/x-icon">
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- Navigation -->
+    <section class="home-header">
+      <div id="nav-container"></div>
+    </section>
+
+    <!-- Product Hero Section -->
+    <section class="body">
+      <div class="product-section">
+        <div class="product-content">
+          <div class="product-images">
+            <img src="/images/workspace/pods/pod_S_col1.png" alt="Product Image" class="active-image">
+            <img src="/images/workspace/pods/pod_S_col2.png" alt="Product Image">
+            <div class="image-navigation">
+              <i class="fa fa-chevron-left left-arrow" onclick="prevImage()"></i>
+              <i class="fa fa-chevron-right right-arrow" onclick="nextImage()"></i>
+            </div>
+          </div>
+          <div class="product-details">
+            <h1>Working Pod S</h1>
+            <h2>Starting €5999.00</h2>
+            <p>A compact, high-performance pod designed for focused work in any environment. Built with durable materials and acoustic engineering for privacy and comfort.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Specifications -->
+    <section class="features-section">
+      <h2>Specifications</h2>
+
+      <div class="product-spec-block">
+        <div class="spec-text">
+          <h3>Finishes & Dimensions</h3>
+          <ul>
+            <li>External dimensions (mm): W1000 × D1000 × H2300</li>
+            <li>Inside size (mm): W840 × D950 × H2120</li>
+            <li>External steel plate: 0.8mm thick, powder-coated with vibration damping</li>
+            <li>Intermediate material: steel frame + 40mm sound-absorbing cotton + 9mm PET acoustic panel (~30dB noise reduction)</li>
+            <li>Internal finish: Flame-retardant PET (standard) or optional fabric wrap</li>
+            <li>Floor: 25mm carpet, adjustable legs (×4), casters (×4)</li>
+            <li>Rear glass: 10mm tempered soundproof glass with black aluminum frame</li>
+            <li>Glass door: 4+6mm laminated soundproof glass with black aluminum frame</li>
+          </ul>
+        </div>
+        <div class="spec-image">
+          <img src="/images/placeholder.jpg" alt="Finishes & Dimensions">
+        </div>
+      </div>
+
+      <div class="product-spec-block">
+        <div class="spec-text">
+          <h3>Power & Accessories</h3>
+          <ul>
+            <li>Voltage: 110–240V (CN/US/UK/EU/Universal)</li>
+            <li>Socket: switch panel ×1, power socket ×1, Type-A ×1, Type-C ×1</li>
+            <li>Ventilation: 2 fans with sensors, 120m³/h air volume</li>
+            <li>Lighting: LED with motion sensor, optional status light, 4000K color temperature</li>
+            <li>Power cord: 1.5m with 13A plug</li>
+            <li>Door hardware: stainless steel locks, handles, hinges, limiters</li>
+          </ul>
+        </div>
+        <div class="spec-image">
+          <img src="/images/placeholder.jpg" alt="Power & Accessories">
+        </div>
+      </div>
+    </section>
+
+    <!-- General UPOD Features -->
+    <section class="features-section">
+      <h2>UPOD Features (All Models)</h2>
+
+      <div class="feature-block">
+        <div class="feature-text">
+          <h3>UPOD Overview</h3>
+          <p>Designed with high-performance acoustic materials (up to 31dB noise reduction) and eco-friendly finishes. Available in four sizes (S/M/L/XL) to fit any space.</p>
+        </div>
+        <div class="feature-image">
+          <img src="/images/placeholder.jpg" alt="UPOD Overview">
+        </div>
+      </div>
+
+      <div class="feature-block">
+        <div class="feature-text">
+          <h3>Degree of Concentration</h3>
+          <p>Theater-grade acoustic engineering blocks distractions and boosts focus. Multi-layer construction with steel, damping sheets, acoustic cotton, and laminated glass achieves Class A acoustic performance (31dB reduction).</p>
+        </div>
+        <div class="feature-image">
+          <img src="/images/placeholder.jpg" alt="Noise Isolation">
+        </div>
+      </div>
+
+      <div class="feature-block">
+        <div class="feature-text">
+          <h3>Safety</h3>
+          <p>Durable aluminum alloy frame with powder-coated finish. ENF-grade certified panels ensure low emissions. Laminated tempered glass provides both acoustic and safety performance.</p>
+        </div>
+        <div class="feature-image">
+          <img src="/images/placeholder.jpg" alt="Safety">
+        </div>
+      </div>
+
+      <div class="feature-block">
+        <div class="feature-text">
+          <h3>Privacy</h3>
+          <p>Secure, quiet space for confidential work. Smart environmental control manages lighting and ventilation automatically to save energy and maintain comfort.</p>
+        </div>
+        <div class="feature-image">
+          <img src="/images/placeholder.jpg" alt="Privacy">
+        </div>
+      </div>
+
+      <div class="feature-block">
+        <div class="feature-text">
+          <h3>Convenience</h3>
+          <p>Equipped with mobility casters, ergonomic workspace design, dual-airflow ventilation, dimmable lighting, and universal power sockets with USB/Type-C charging.</p>
+        </div>
+        <div class="feature-image">
+          <img src="/images/placeholder.jpg" alt="Convenience">
+        </div>
+      </div>
+    </section>
+
+    <!-- Quote Container -->
+    <div id="quote-container"></div>
+
+    <!-- Footer -->
+    <section class="home-header">
+      <div id="footer-container"></div>
+    </section>
+  </div>
+
+  <!-- Product Variations -->
+  <script>
+    window.quoteVariations = ["Black", "Anthracite", "Grey", "White"];
+  </script>
+
+  <!-- Hidden/predefined product data -->
+  <div id="product-info"
+       data-product-name="Working Pod S"
+       data-unit-cost="5999.99"
+       data-vat-rate="18">
+  </div>
+
+  <!-- Scripts -->
+  <script src="/script.js"></script>
+  <script src="/scriptpdf.js"></script>
+</body>
+</html>
