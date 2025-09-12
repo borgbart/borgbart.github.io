@@ -221,6 +221,12 @@ p {
     nav {
         padding: 1% 3%;
     }
+
+    .home-header,
+    nav {
+      width: 100vw; /* force full viewport width */
+      margin: 0;
+    }
 }
 
 @media (max-width: 576px) {
