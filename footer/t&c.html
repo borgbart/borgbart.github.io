@@ -8,21 +8,92 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" href="/images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="/images/flavicon.png" type="image/x-icon">
 </head>
 
 <style>
-    body { font-family: Arial, Helvetica, sans-serif; line-height:1.6; margin:0; padding:20px; color:#222; background:#f7f7f7; }
-    .container { max-width:900px; margin:0 auto; background:#fff; padding:24px; border-radius:8px; box-shadow:0 6px 18px rgba(0,0,0,0.06); }
-    h1 { margin-top:0; font-size:1.6rem; }
-    .intro { background:#eef6ff; padding:12px 14px; border-radius:6px; margin-bottom:18px; }
-    section { margin-bottom:16px; }
-    h2 { font-size:1.05rem; margin-bottom:6px; }
-    p { margin:8px 0; }
-    ul { margin:8px 0 8px 18px; }
-    small { color:#666; }
-    .muted { color:#666; font-size:0.95rem; }
-  </style>
+    /* Apply Poppins everywhere */
+body {
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  background: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Centered container */
+.terms-conditions-page .container {
+  max-width: 900px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* Headings */
+.terms-conditions-page h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #22333B;
+}
+
+.terms-conditions-page h2 {
+  font-size: 1.2rem;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #22333B;
+}
+
+/* Intro box */
+.terms-conditions-page .intro {
+  background: #eef6ff;
+  padding: 15px 20px;
+  border-left: 4px solid #4a90e2;
+  margin: 20px 0 30px;
+  border-radius: 6px;
+}
+
+/* Text */
+.terms-conditions-page p {
+  margin: 10px 0;
+  color: #444;
+  text-align: justify;
+}
+
+.terms-conditions-page ul {
+  margin: 10px 0 10px 20px;
+  color: #444;
+}
+
+.muted {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 576px) {
+  .terms-conditions-page .container {
+    padding: 20px;
+    margin: 20px 10px;
+  }
+
+  .terms-conditions-page h1 {
+    font-size: 1.6rem;
+  }
+
+  .terms-conditions-page h2 {
+    font-size: 1.05rem;
+  }
+}
+
+</style>
 
 <body>
     <div class="wrapper">
@@ -34,70 +105,72 @@
 
 <!-- T&C Page Content -->
  <section>
-    <div class="container">
-        <h1>Terms &amp; Conditions</h1>
-        <p class="muted"><strong>BB2000 ST</strong> — sole trader registered in Malta. <small>[Last updated: INSERT DATE]</small></p>
-    
-        <div class="intro">
-        <strong>Friendly intro:</strong>
-        <p>Welcome — these short terms explain how we sell furniture and related services. By placing an order with BB2000 ST you accept these terms. If you prefer a longer legal version, let us know.</p>
+    <div class="terms-conditions-page">
+        <div class="container">
+            <h1>Terms &amp; Conditions</h1>
+            <p class="muted"><strong>BB2000 ST</strong> — sole trader registered in Malta. <small>[Last updated: INSERT DATE]</small></p>
+        
+            <div class="intro">
+            <strong>Friendly intro:</strong>
+            <p>Welcome — these short terms explain how we sell furniture and related services. By placing an order with BB2000 ST you accept these terms. If you prefer a longer legal version, let us know.</p>
+            </div>
+        
+            <section id="company-info">
+            <h2>1. Who we are</h2>
+            <p>BB2000 ST is a sole trader registered in Malta. We act both as agents for third-party suppliers and as direct sellers of furniture sourced through European suppliers.</p>
+            </section>
+        
+            <section id="products">
+            <h2>2. Products</h2>
+            <p>We sell office furniture, office pods and household furniture. Product images and descriptions are a guide and may vary according to the manufacturer.</p>
+            </section>
+        
+            <section id="orders-payments">
+            <h2>3. Orders &amp; Payment</h2>
+            <ul>
+                <li>All orders are subject to our acceptance.</li>
+                <li>A minimum <strong>50% deposit</strong> is required when you place an order.</li>
+                <li>The balance is due on delivery or installation.</li>
+                <li>For some custom orders we may require <strong>full prepayment</strong>.</li>
+                <li>Ownership stays with BB2000 ST until full payment is received.</li>
+            </ul>
+            </section>
+        
+            <section id="delivery">
+            <h2>4. Delivery &amp; Installation</h2>
+            <p>We deliver locally in Malta to the address you give us. Delivery/installation dates are estimates. Risk of loss or damage passes to you once the goods are delivered and/or installed.</p>
+            </section>
+        
+            <section id="returns">
+            <h2>5. Returns &amp; Refunds</h2>
+            <p>We do not offer refunds except where required by Maltese or EU consumer law. All products are covered by the supplier/manufacturer guarantees applicable in the EU — warranty claims will follow the supplier's terms.</p>
+            </section>
+        
+            <section id="liability">
+            <h2>6. Liability</h2>
+            <p>To the fullest extent permitted by law:</p>
+            <ul>
+                <li>We are not liable for indirect, incidental or consequential losses.</li>
+                <li>We are not liable for damage or injury caused by improper use, modification, or failure to follow instructions.</li>
+                <li>Our total liability related to any sale will not exceed the price you paid for the relevant product(s).</li>
+            </ul>
+            </section>
+        
+            <section id="privacy">
+            <h2>7. Privacy</h2>
+            <p>Our site is mainly informational. We do not collect personal information unless you voluntarily submit it via our contact form. Any data you submit is used only to respond to your enquiry and is not sold or shared except as required by law.</p>
+            </section>
+        
+            <section id="law">
+            <h2>8. Governing law</h2>
+            <p>These terms are governed by the laws of Malta. Any disputes will be resolved by the Maltese courts.</p>
+            </section>
+        
+            <section id="changes">
+            <h2>9. Changes</h2>
+            <p>We may update these terms from time to time. The latest version will be posted on our website.</p>
+            </section>
         </div>
-    
-        <section id="company-info">
-        <h2>1. Who we are</h2>
-        <p>BB2000 ST is a sole trader registered in Malta. We act both as agents for third-party suppliers and as direct sellers of furniture sourced through European suppliers.</p>
-        </section>
-    
-        <section id="products">
-        <h2>2. Products</h2>
-        <p>We sell office furniture, office pods and household furniture. Product images and descriptions are a guide and may vary according to the manufacturer.</p>
-        </section>
-    
-        <section id="orders-payments">
-        <h2>3. Orders &amp; Payment</h2>
-        <ul>
-            <li>All orders are subject to our acceptance.</li>
-            <li>A minimum <strong>50% deposit</strong> is required when you place an order.</li>
-            <li>The balance is due on delivery or installation.</li>
-            <li>For some custom orders we may require <strong>full prepayment</strong>.</li>
-            <li>Ownership stays with BB2000 ST until full payment is received.</li>
-        </ul>
-        </section>
-    
-        <section id="delivery">
-        <h2>4. Delivery &amp; Installation</h2>
-        <p>We deliver locally in Malta to the address you give us. Delivery/installation dates are estimates. Risk of loss or damage passes to you once the goods are delivered and/or installed.</p>
-        </section>
-    
-        <section id="returns">
-        <h2>5. Returns &amp; Refunds</h2>
-        <p>We do not offer refunds except where required by Maltese or EU consumer law. All products are covered by the supplier/manufacturer guarantees applicable in the EU — warranty claims will follow the supplier's terms.</p>
-        </section>
-    
-        <section id="liability">
-        <h2>6. Liability</h2>
-        <p>To the fullest extent permitted by law:</p>
-        <ul>
-            <li>We are not liable for indirect, incidental or consequential losses.</li>
-            <li>We are not liable for damage or injury caused by improper use, modification, or failure to follow instructions.</li>
-            <li>Our total liability related to any sale will not exceed the price you paid for the relevant product(s).</li>
-        </ul>
-        </section>
-    
-        <section id="privacy">
-        <h2>7. Privacy</h2>
-        <p>Our site is mainly informational. We do not collect personal information unless you voluntarily submit it via our contact form. Any data you submit is used only to respond to your enquiry and is not sold or shared except as required by law.</p>
-        </section>
-    
-        <section id="law">
-        <h2>8. Governing law</h2>
-        <p>These terms are governed by the laws of Malta. Any disputes will be resolved by the Maltese courts.</p>
-        </section>
-    
-        <section id="changes">
-        <h2>9. Changes</h2>
-        <p>We may update these terms from time to time. The latest version will be posted on our website.</p>
-        </section>
     </div>
 </section>
 <!-- End of T&C Page Content -->
