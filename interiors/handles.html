@@ -1,154 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BB2000</title>
-    <link rel="stylesheet" href="/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" href="/images/flavicon.png" type="image/x-icon">
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BB2000</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="/images/favicon.png" type="image/x-icon">
 
-<style>
+  <style>
     body {
-    font-family: 'Poppins', sans-serif;
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-    background-color: #F7EEE6 !important;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
     }
 
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* ========== BRAND SWITCHER ========== */
+    .brand-switcher {
+      display: flex;
+      flex-direction: row;
+      flex: 1;
+      width: 100%;
+    }
+
+    .brand {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.4s ease;
+      filter: grayscale(100%) brightness(0.7);
+      position: relative;
+      text-align: center;
+    }
+
+    .brand:hover {
+      filter: none;
+    }
+
+    .brand picture,
+    .brand img {
+      max-width: 200px;
+      width: 100%;
+      height: auto;
+      transition: transform 0.3s ease;
+      z-index: 2;
+    }
+
+    .brand:hover img {
+      transform: scale(1.05);
+    }
+
+    /* Brand-specific backgrounds */
     .mandelli {
-        padding-top: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        max-width: 100%; /* Ensures responsiveness */
-        height: auto;
+      background-color: #F7EEE6;
     }
 
-    .text-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
+    .fimet {
+      background-color: #ffffff;
     }
 
-    .text-section h2 {
-    font-weight: bold;
-    font-size: 1.5rem; /* Medium font size */
-    color:#231F20
+    /* Full clickable area */
+    .brand a {
+      position: absolute;
+      top: 0; left: 0;
+      right: 0; bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
     }
 
-    .text-section p {
-    font-size: 1rem; /* Smaller font size */
-    font-style: italic;
-    text-align: justify;
-    max-width: 600px; /* Prevents overly wide text */
-    color:black
+    /* MOBILE: stack vertically, always show full color */
+    @media (max-width: 768px) {
+      .brand-switcher {
+        flex-direction: column;
+      }
+
+      .brand {
+        filter: none; /* Full color by default */
+        height: 50vh;
+      }
     }
-
-
-</style>
-
+  </style>
+</head>
 <body>
-    <div class="wrapper">
-        <!-- nav.html -->
-        <section class="home-header">
-            <div id="nav-container"></div>
-        </section>
-    
-        <section>
-            <picture  class="mandelli">
-              <!-- Web Version Image -->
-              <source media="(min-width: 768px)" srcset="/images/Handles/mandellilogo.png">
-              <!-- Mobile Version Image -->
-              <img src="/images/Handles/mandellimobile.png" alt="Welcome Image"  class="mandelli">
-            </picture>
-        </section>
-
-        <section class="text-section">
-            <h2>Design in your hands.</h2>
-            <p>
-              <em>For over sixty years we have been designing and manufacturing brass handles. Excellent quality, creativity and continuous research for a highly reliable product of high aesthetic value, entirely processed in Italy.</em>
-            </p>
-          </section>
-
-          <section class="body" >
-            <div class="row"> 
-                <div class="col">
-                    <a href="/interiors/handles/doorhandles.html" class="product-link">
-                        <div class="button" id="standard">
-                            <div class="image-default">
-                                <img src="/images/Handles/doorhandles.png" alt="">
-                            </div>
-                            <div class="layer">
-                                <h3>Door Handles</h3>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col">
-                    <a href="/lamps.html" class="product-link">
-                        <div class="button" id="adjustable">
-                            <div class="image-default">
-                                <img src="/images/Handles/pullhandles.png" alt="">
-                            </div>
-                            <div class="layer">
-                                <h3>Pull Handles</h3>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col">
-                    <a href="/officeequipment.html" class="product-link">
-                        <div class="button" id="custom">
-                            <div class="image-default">
-                                <img src="/images/Handles/windowhandles.png" alt="">
-                            </div>
-                            <div class="layer">
-                                <h3>Window Handles</h3>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col">
-                    <a href="/officeequipment.html" class="product-link">
-                        <div class="button" id="custom">
-                            <div class="image-default">
-                                <img src="/images/Handles/doorknobs.png" alt="">
-                            </div>
-                            <div class="layer">
-                                <h3>Door Knobs</h3>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col">
-                    <a href="/officeequipment.html" class="product-link">
-                        <div class="button" id="custom">
-                            <div class="image-default">
-                                <img src="/images/Handles/slidinghandles.png" alt="">
-                            </div>
-                            <div class="layer">
-                                <h3>Sliding Handles</h3>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </section>
-    </div>
-
+  <div class="wrapper">
+    <!-- Navigation -->
     <section class="home-header">
-        <div id="footer-container"></div>
+      <div id="nav-container"></div>
     </section>
 
-<!-- Link to the external script file -->
-<script src="/script.js"></script>
+    <!-- BRAND SWITCHER SECTION -->
+    <section class="brand-switcher">
+      <!-- Mandelli -->
+      <div class="brand mandelli">
+        <a href="/interiors/handles/doorhandles.html" class="product-link">
+          <picture>
+            <!-- Web / Desktop -->
+            <source media="(min-width: 768px)" srcset="/images/Handles/mandellilogo.png">
+            <!-- Mobile -->
+            <img src="/images/Handles/blank.png" alt="Mandelli" class="brand-logo">
+          </picture>
+        </a>
+      </div>
+
+      <!-- Fimet -->
+      <div class="brand fimet">
+        <a href="/interiors/handles/fimethandles.html" class="product-link">
+          <picture>
+            <!-- Web / Desktop -->
+            <source media="(min-width: 768px)" srcset="/images/Handles/fimetlogo.png">
+            <!-- Mobile -->
+            <img src="/images/Handles/blank.png" alt="Fimet" class="brand-logo">
+          </picture>
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="home-header">
+      <div id="footer-container"></div>
+    </section>
+  </div>
+
+  <!-- Script -->
+  <script src="/script.js"></script>
 </body>
 </html>
