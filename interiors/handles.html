@@ -46,14 +46,29 @@
       filter: none;
     }
 
+    /* Default for mobile: keep smaller */
     .brand picture,
     .brand img {
-      max-width: 200px;
-      width: 100%;
-      height: auto;
-      transition: transform 0.3s ease;
-      z-index: 2;
+    max-width: 200px;
+    width: 100%;
+    height: auto;
     }
+
+    /* Make logos larger on desktop */
+    @media (min-width: 992px) {
+    .brand picture,
+    .brand img {
+        max-width: 300px; /* increase size */
+    }
+    }
+
+    @media (min-width: 1400px) {
+    .brand picture,
+    .brand img {
+        max-width: 400px; /* even bigger on very wide screens */
+    }
+    }
+
 
     .brand:hover img {
       transform: scale(1.05);
@@ -109,7 +124,7 @@
             <!-- Web / Desktop -->
             <source media="(min-width: 768px)" srcset="/images/Handles/mandellilogo.png">
             <!-- Mobile -->
-            <img src="/images/Handles/blank.png" alt="Mandelli" class="brand-logo">
+            <img src="/images/Handles/mandellilogo.png"> alt="Mandelli" class="brand-logo">
           </picture>
         </a>
       </div>
@@ -119,9 +134,9 @@
         <a href="/interiors/handles/fimethandles.html" class="product-link">
           <picture>
             <!-- Web / Desktop -->
-            <source media="(min-width: 768px)" srcset="/images/Handles/fimetlogo.png">
+            <source media="(min-width: 768px)" srcset="/images/Handles/fimet/fimetlogo.png">
             <!-- Mobile -->
-            <img src="/images/Handles/blank.png" alt="Fimet" class="brand-logo">
+            <img src="/images/Handles/fimet/fimetlogo.png" alt="Fimet" class="brand-logo">
           </picture>
         </a>
       </div>
