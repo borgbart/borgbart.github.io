@@ -591,6 +591,7 @@ p {
 
 .product-details ul {
     padding-left: 20px;
+    margin-top: 10px; 
     margin-top: -10px;
     margin-bottom: 20px;
     list-style-position: outside;
@@ -598,6 +599,7 @@ p {
 
 .product-details li {
     margin-bottom: 12px;
+    margin-top: 10px; 
     color: black;
     font-size: 1rem;
     line-height: 1.5;
