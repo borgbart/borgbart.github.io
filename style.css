@@ -553,11 +553,11 @@ p {
 /* Media query for web (larger screens) */
 @media (min-width: 768px) {
     .left-arrow {
-        left: 100px; /* Closer on web */
+        left: 2%; 
     }
 
     .right-arrow {
-        right: 100px; /* Closer on web */
+        right: 2%;
     }
 }
 
