@@ -590,7 +590,7 @@ p {
 }
 
 .product-details ul {
-    padding-left: 20px;
+    padding-left: 100px;
     margin-top: 10px; 
     margin-top: -10px;
     margin-bottom: 20px;
@@ -604,7 +604,6 @@ p {
     font-size: 1rem;
     line-height: 1.5;
     list-style-type: disc;
-    padding-left: 100px;
 }
 
 /* Footer styles */
