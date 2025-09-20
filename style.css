@@ -743,7 +743,7 @@ p {
 }
 
 /* Mobile view styles */
-@media (max-width: 576px) {
+@media (max-width: 768px) {
     .product-content {
         flex-direction: column;
         align-items: center;
