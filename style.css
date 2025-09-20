@@ -768,6 +768,7 @@ p {
 
     .product-details ul {
         text-align: left;
+        padding-left: 30px;
     }
 
     .image-navigation {
