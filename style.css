@@ -38,7 +38,7 @@ body {
 }
 
 .home-header + .body {
-    padding-top: 50px; /* only affects .body immediately after a header */
+    padding-top: 350px; /* only affects .body immediately after a header */
 }
 
 
