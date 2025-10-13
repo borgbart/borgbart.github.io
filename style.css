@@ -37,10 +37,6 @@ body {
     background-color: #22333B;
 }
 
-.home-header + .body {
-    padding-top: 350px; /* only affects .body immediately after a header */
-}
-
 
 nav {
     display: flex;
@@ -312,13 +308,13 @@ p {
 }
 
 .layer {
-    padding: 10px;
+    padding: 5px;
     background-color: #F7F4F3;
 }
 
 .layer h3 {
-    margin-top: 10px;
-    font-size: 30px;
+    margin-top: 5px;
+    font-size: 26px;
     text-align: center;
     color: #22333B;
 }
