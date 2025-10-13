@@ -210,11 +210,6 @@ p {
     overflow: hidden;
     position: relative;
     background-color: #F7F4F3;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* vertically center content */
-    align-items: center;     /* horizontally center content */
-    text-align: center;
 }
 
 .col img {

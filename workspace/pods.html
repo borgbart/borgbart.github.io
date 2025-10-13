@@ -13,12 +13,20 @@
 
 <style>   
 
-    @media (min-width: 576px) {
-    .col {
-        width: 20% !important;
-    }
-    }
-    </style>
+@media (min-width: 1200px) {
+  .col {
+    width: 20% !important; /* 4 per row */
+  }
+}
+
+/* Medium screens (e.g., laptop split view, tablets landscape) */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .col {
+    width: 45% !important; /* 2 per row */
+  }
+}
+   
+</style>
 
 <body>
     <div class="wrapper">
