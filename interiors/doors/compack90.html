@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BB2000</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="/images/favicon.png" type="image/x-icon">
+</head>
+
+<style>
+
+    .celegon {
+            padding-top: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 100%; /* Ensures responsiveness */
+            height: auto;
+            padding-bottom: 0px !important ;
+        }
+
+</style>
+
+<body>
+ 
+    <div class="wrapper">
+        <!-- nav.html -->
+        <section class="home-header">
+            <div id="nav-container"></div>
+        </section>
+
+        <section>
+            <picture  class="celegon">
+              <!-- Web Version Image -->
+              <source media="(min-width: 768px)" srcset="/images/doors/celegon.png">
+              <!-- Mobile Version Image -->
+              <img src="/images/doors/celegon.png" alt="Welcome Image"  class="bmb">
+            </picture>
+        </section>
+
+    <section class="body">
+        <div class="product-section">
+            <div class="product-content">
+                <div class="product-images">
+                    <img src="/images/doors/compack90.png" alt="Product Image" class="active-image">
+                    <img src="/images/doors/compack90_install.png" alt="Product Image">
+                    <img src="/images/doors/compack90_install2.png" alt="Product Image">
+                    <img src="/images/celegon/fold90.gif" alt="Product Image">
+                    <div class="image-navigation">
+                        <i class="fa fa-chevron-left left-arrow" onclick="prevImage()"></i>
+                        <i class="fa fa-chevron-right right-arrow" onclick="nextImage()"></i>
+                    </div>
+                </div>
+                <div class="product-details">
+                    <h1>Pivot Doors</h1>
+                    <h2>Strating from €799</h2>
+                    <h4>The swing-and-slide system that halves the door's clearance needs.</h4>
+                    <p>Thanks to the innovative movement, the door can be opened from both sides and its push operation is as easy as that of any swing door. this technology reduces a door's clearance needs by 50%. A new technology that solves the issues of managing space and transit between various internal environments.</p>
+                    <p>If you're interested in ordering a custom door, simply contact us and we'll connect you with one of our trusted professional carpenters. They will handle the design, manufacturing, and installation of your door to your exact specifications. We supply the premium opening system and hinge mechanism used in your door, ensuring smooth operation and long-lasting performance. The choice of door style, colour, and finish will be discussed directly between you and the carpenter, allowing full customization to your preferences.</p>                </div>
+            </div>
+        </div>    
+    </section>
+    </div>
+
+    <section class="home-header">
+        <div id="footer-container"></div>
+    </section>
+
+<!-- Link to the external script file -->
+<script src="/script.js"></script>
+</body>
+</html>
