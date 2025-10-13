@@ -37,6 +37,11 @@ body {
     background-color: #22333B;
 }
 
+.home-header + .body {
+    padding-top: 50px; /* only affects .body immediately after a header */
+}
+
+
 nav {
     display: flex;
     padding: 1% 6%;
