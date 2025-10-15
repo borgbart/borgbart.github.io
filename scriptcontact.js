@@ -35,3 +35,30 @@ document.addEventListener("DOMContentLoaded", () => {
         // Allow the form to submit to Formspree
     });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const container = document.getElementById("quote-container");
+    const variations = window.quoteVariations || []; // Use variations from HTML page
+
+    fetch("/contactform.html")
+        .then(response => response.text())
+        .then(html => {
+            container.innerHTML = html;
+
+            const select = document.getElementById("variation");
+            if (select && variations.length) {
+                variations.forEach(v => {
+                    const option = document.createElement("option");
+                    option.value = v;
+                    option.textContent = v;
+                    select.appendChild(option);
+                });
+            }
+
+            const product = document.getElementById("productinput");
+            if (product) {
+                const productInfo = document.getElementById("product-info");
+                product.value = productInfo.dataset.productName;
+            }
+        });
+});
