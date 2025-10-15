@@ -1,5 +1,100 @@
 <!-- contact-form.html -->
 <section class="contact-section">
+    <style>
+      /* Contact Form Styles (Scoped to this form) */
+      .contact-section {
+          width: 100%;
+          max-width: 700px;
+          margin: 0 auto; /* center horizontally */
+          background-color: #fff;
+          padding: 40px;
+          border-radius: 12px;
+          box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+          font-family: 'Poppins', sans-serif;
+      }
+  
+      .contact-section h2 {
+          text-align: center;
+          font-size: 2rem;
+          margin-bottom: 30px;
+          color: #22333B;
+      }
+  
+      .contact-form-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+          gap: 20px;
+      }
+  
+      .contact-form-row {
+          display: contents;
+      }
+  
+      .contact-form-column {
+          display: flex;
+          flex-direction: column;
+      }
+  
+      .contact-form-column.wide {
+          grid-column: span 2;
+      }
+  
+      .contact-form-column label {
+          margin-bottom: 8px;
+          font-weight: 600;
+          color: #22333B;
+      }
+  
+      .contact-form-column input,
+      .contact-form-column textarea,
+      .contact-form-column select {
+          padding: 12px 15px;
+          border-radius: 6px;
+          border: 1px solid #ccc;
+          font-size: 1rem;
+          outline: none;
+          transition: border-color 0.3s;
+      }
+  
+      .contact-form-column input:focus,
+      .contact-form-column textarea:focus,
+      .contact-form-column select:focus {
+          border-color: #007BFF;
+      }
+  
+      .contact-form-button {
+          text-align: center;
+          margin-top: 30px;
+      }
+  
+      .contact-form-button button {
+          background-color: #007BFF;
+          color: #fff;
+          font-size: 1.1rem;
+          font-weight: 600;
+          padding: 12px 30px;
+          border: none;
+          border-radius: 8px;
+          cursor: pointer;
+          transition: background-color 0.3s, transform 0.2s;
+      }
+  
+      .contact-form-button button:hover {
+          background-color: #0056b3;
+          transform: translateY(-2px);
+      }
+  
+      /* Responsive adjustments */
+      @media (max-width: 600px) {
+          .contact-section {
+              padding: 30px 20px;
+          }
+          .contact-form-column.wide {
+              grid-column: span 1;
+          }
+      }
+    </style>
+
     <h2>Send us a Message</h2>
     <form
       action="https://formspree.io/f/movlwrwe"
