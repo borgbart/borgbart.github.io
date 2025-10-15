@@ -86,19 +86,23 @@
       }
   
       /* Responsive adjustments */
-      @media (max-width: 600px) {
-          .contact-section {
-              padding: 30px 20px;
-          }
-          .contact-form-column.wide {
-              grid-column: span 1;
-          }
-      }
+        @media (max-width: 600px) {
+            .contact-section {
+                width: 90%;        /* 5% margin on each side */
+                margin: 0 auto;    /* center horizontally */
+                padding: 30px 20px; /* keep some internal padding */
+            }
 
-      /* Add space below the contact form before the footer */
-#contact-container {
-    margin-bottom: 50px; /* Adjust the value as needed */
-}
+            .contact-form-column.wide {
+                grid-column: span 1; /* wide fields take full width on mobile */
+            }
+        }
+
+
+            /* Add space below the contact form before the footer */
+        #contact-container {
+            margin-bottom: 50px; /* Adjust the value as needed */
+        }
 
     </style>
 
