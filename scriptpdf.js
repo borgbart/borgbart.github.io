@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const container = document.getElementById("quote-container");
     const variations = window.quoteVariations || []; // Use variations from HTML page
 
-    fetch("/quote.html")
+    fetch("/contactform.html")
         .then(response => response.text())
         .then(html => {
             container.innerHTML = html;

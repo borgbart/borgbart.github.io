@@ -1,0 +1,46 @@
+<!-- quote-form.html -->
+<section class="quote-section">
+    <h2>Get a Quote</h2>
+    <form
+            action="https://formspree.io/f/movlwrwe"
+            method="POST"
+    >
+        <input type="hidden" id="productinput" name="product" value="">
+    <div class="quote-form-grid">
+        <div class="quote-form-row">
+            <div class="quote-form-column">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Your full name">
+            </div>
+            <div class="quote-form-column">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your email address">
+            </div>
+            <div class="quote-form-column">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Your phone number">
+            </div>
+        </div>
+
+        <div class="quote-form-row">
+            <div class="quote-form-column wide">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" value="1">
+            </div>
+            <div class="quote-form-column wide">
+                <label for="variation">Finish:</label>
+                <select id="variation" name="variation">
+                    <!-- Options will be added dynamically -->
+                </select>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="quote-form-button">
+        <button type="submit">Request Quote</button>
+    </div>
+    </form>
+
+</section>
