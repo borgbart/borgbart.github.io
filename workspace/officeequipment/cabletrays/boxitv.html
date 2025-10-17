@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boxit V - BB2000</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="/images/favicon.png" type="image/x-icon">
+</head>
+
+<style>
+    /* Add horizontal space between the two links in technical-specs sections */
+    .technical-specs h2 {
+       display: inline-flex;
+       gap: 20px; /* Adjust this value to increase/decrease space */
+   }
+</style>
+
+<body>
+ 
+    <div class="wrapper">
+        <!-- nav.html -->
+        <section class="home-header">
+            <div id="nav-container"></div>
+        </section>
+
+    <section class="body">
+        <div class="product-section">
+            <div class="product-content">
+                <div class="product-images">
+                    <img src="/images/workspace/officeequipment/cabletrays/boxitv/boxitvblack.png" alt="Product Image" class="active-image">
+                    <img src="/images/workspace/officeequipment/cabletrays/boxitv/boxitvgrey.png" alt="Product Image">
+                    <img src="/images/workspace/officeequipment/cabletrays/boxitv/boxitvwhite.png" alt="Product Image">
+                    <div class="image-navigation">
+                        <i class="fa fa-chevron-left left-arrow" onclick="prevImage()"></i>
+                        <i class="fa fa-chevron-right right-arrow" onclick="nextImage()"></i>
+                    </div>
+                </div>
+                <div class="product-details">
+                    <h1>Boxit V Cable Tray</h1>
+                    <p>The Compact cable tray is a robust and versatile solution for managing cables under desks and workstations. Made from high-quality steel, it combines durability with functional design, ensuring a tidy and efficient workspace.</p>
+    
+                    <p>Its large cable holes provide flexible routing options, allowing multiple cables to pass through neatly. The tray can be securely fixed using screws beneath the desktop, making installation quick and reliable.</p>
+                    
+                    <h2 id="features-title">Key Features:</h2>
+                    <ul>
+                        <li>Durable steel construction</li>
+                        <li>Flexible cable routing with large cable holes</li>
+                        <li>Height: 89 mm, Depth: 120 mm, Material thickness: 1 mm</li>
+                        <li>Secure fixation via screws under the desktop</li>
+                        <li>Available widths: 310 mm, 520 mm, 1000 mm</li>
+                        <li>Available colours: Black, Grey, White</li>
+                    </ul>    
+                </div>
+            </div>
+        </div>    
+    </section>
+    </div>
+
+    <section class="technical-specs">
+        <h2>
+            <a href="/borgbart.github.io/workspace/docs/cabletrays/boxitv_catalogue.pdf"  target="_blank">Catalogue</a>
+        </h2>
+    </section>
+    
+    <section class="technical-specs">
+        <h2>
+            <a href="/borgbart.github.io/workspace/docs/cabletrays/boxitv310_drawing.pdf" target="_blank">Technical Specifications</a>
+            <a href="/borgbart.github.io/workspace/docs/cabletrays/boxitv520_drawing.pdf" target="_blank">Technical Specifications</a>
+            <a href="/borgbart.github.io/workspace/docs/cabletrays/boxitv1000_drawing.pdf" target="_blank">Technical Specifications</a>
+        </h2>
+    </section>
+
+    <section class="home-header">
+        <div id="footer-container"></div>
+    </section>
+
+<!-- Link to the external script file -->
+<script src="/script.js"></script>
+<script src="/scriptpdf.js"></script>
+
+</body>
+</html>
