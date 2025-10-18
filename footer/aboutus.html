@@ -109,11 +109,13 @@
     }
 
     .card-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: stretch; /* <- this forces all cards to stretch to the same height */
     }
+
 
     .card {
       background: #f5f5f5;
@@ -155,8 +157,8 @@
     <!-- Hero Banner -->
     <header class="about-header">
       <picture>
-        <source media="(max-width: 768px)" srcset="/images/about-banner-mobile.jpg" />
-        <img src="/images/about-banner.jpg" alt="About BB2000" />
+        <source media="(max-width: 768px)" srcset="//borgbart.github.io/images/aboutus/hero_image_mobile.png" />
+        <img src="/borgbart.github.io/images/aboutus/hero_image_web.png" alt="About BB2000" />
       </picture>
       <div class="about-overlay">
         <h1>About Us</h1>
