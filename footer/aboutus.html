@@ -24,11 +24,11 @@
     .about-header {
       position: relative;
       width: 100%;
-      overflow: hidden;
       height: 60vh;
       display: flex;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
+      overflow: hidden;
     }
 
     .about-header picture,
@@ -39,12 +39,13 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+      filter: blur(6px);
+      transform: scale(1.05); /* optional zoom for better blur effect */
     }
 
     .about-overlay {
       position: relative;
       z-index: 2;
-      background: rgba(0, 0, 0, 0.45);
       width: 100%;
       height: 100%;
       display: flex;
@@ -57,7 +58,7 @@
       color: #fff;
       font-size: 3rem;
       font-weight: 700;
-      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
       margin: 0;
       padding: 0 20px;
     }
@@ -92,74 +93,53 @@
       margin-bottom: 20px;
     }
 
-    /* ---------- Split Layouts ---------- */
-    .mission,
-    .goals,
-    .values {
+    /* ---------- Goals + Values Layout ---------- */
+    .two-columns {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      align-items: center;
+      grid-template-columns: repeat(2, 1fr);
       gap: 40px;
+      margin-top: 60px;
       margin-bottom: 80px;
     }
 
-    .mission img,
-    .goals img,
-    .values img {
-      width: 100%;
-      border-radius: 16px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease;
-    }
-
-    .mission img:hover,
-    .goals img:hover,
-    .values img:hover {
-      transform: scale(1.02);
-    }
-
     @media (max-width: 768px) {
-      .mission,
-      .goals,
-      .values {
+      .two-columns {
         grid-template-columns: 1fr;
       }
     }
 
-    /* ---------- Values Section ---------- */
-    .values-list {
+    .card-list {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
       gap: 20px;
-      margin-top: 30px;
+      justify-content: center;
     }
 
-    .value-card {
+    .card {
       background: #f5f5f5;
       border-radius: 12px;
       padding: 25px;
       width: 240px;
       text-align: center;
       transition: all 0.3s ease;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
     }
 
-    .value-card:hover {
+    .card:hover {
       background: #22333b;
       color: #fff;
       transform: translateY(-5px);
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
     }
 
-    .value-card i {
+    .card i {
       font-size: 2rem;
       margin-bottom: 10px;
       color: #22333b;
       transition: color 0.3s ease;
     }
 
-    .value-card:hover i {
+    .card:hover i {
       color: #fff;
     }
   </style>
@@ -175,82 +155,82 @@
     <!-- Hero Banner -->
     <header class="about-header">
       <picture>
-        <!-- Mobile image -->
-        <source media="(max-width: 768px)" srcset="borgbart.github.io/images/aboutus/hero_image_mobile.png" />
-        <!-- Desktop image -->
-        <img src="/borgbart.github.io/images/aboutus/hero_image_web.png" alt="About BB2000" />
+        <source media="(max-width: 768px)" srcset="/images/about-banner-mobile.jpg" />
+        <img src="/images/about-banner.jpg" alt="About BB2000" />
       </picture>
       <div class="about-overlay">
         <h1>About Us</h1>
       </div>
     </header>
 
-    <!-- Who We Are -->
+    <!-- Mission Section -->
     <section class="section">
-      <h2>Who We Are</h2>
+      <h2>Our Mission</h2>
       <p>
-        At <strong>BB2000</strong>, we’ve spent years building connections with leading international manufacturers, supplying
-        high-quality materials and innovative solutions to the local market. Our focus has always been on bringing together
-        great products, trusted partners, and the people who use them.
+        At <strong>BB2000</strong>, our mission is to bridge the gap between world-class materials and the local market, ensuring
+        that quality, design, and innovation are accessible to everyone. We strive to connect professionals and individuals
+        with products that not only perform exceptionally but also inspire creativity, functionality, and lasting value.
       </p>
       <p>
-        Over time, we’ve come across outstanding products that deserve to be experienced directly — pieces defined by quality,
-        design, and purpose. That’s why we created this platform: to share some of the exceptional brands and items we’ve
-        discovered along the way, now available straight to you.
+        We believe in building lasting relationships with our partners and customers by providing transparent, reliable, and
+        expert guidance. Every product we offer embodies craftsmanship, sustainability, and timeless design — reflecting the
+        same care and expertise that have defined our company for years.
+      </p>
+      <p>
+        Our mission is more than supplying products; it is about fostering a community of people who appreciate quality, trust,
+        and innovation. We aim to make every interaction a meaningful one, so that excellence is always within reach.
       </p>
     </section>
 
-    <!-- Mission -->
-    <section class="section mission">
-      <div>
-        <h2>Our Mission</h2>
-        <p>
-          Our mission is to bridge the gap between international innovation and local accessibility. We strive to provide
-          our customers with products that embody craftsmanship, functionality, and timeless design — ensuring that quality
-          and authenticity are never out of reach.
-        </p>
-      </div>
-      <img src="/images/mission.jpg" alt="Our Mission" />
-    </section>
-
-    <!-- Goals -->
-    <section class="section goals">
-      <img src="/images/goals.jpg" alt="Our Goals" />
+    <!-- Goals + Values Section -->
+    <section class="section two-columns">
+      <!-- Goals Column -->
       <div>
         <h2>Our Goals</h2>
-        <p>
-          We aim to strengthen the local market by offering reliable access to premium international brands, empowering both
-          professionals and individuals to choose excellence without compromise. Through efficiency, transparency, and care,
-          we continue to build long-lasting relationships with our clients and partners.
-        </p>
+        <div class="card-list">
+          <div class="card">
+            <i class="fa fa-globe"></i>
+            <h4>Global Access</h4>
+            <p>Bring premium international brands to the local market for everyone.</p>
+          </div>
+          <div class="card">
+            <i class="fa fa-check-circle"></i>
+            <h4>Reliability</h4>
+            <p>Ensure transparency and trustworthiness in all our operations.</p>
+          </div>
+          <div class="card">
+            <i class="fa fa-lightbulb-o"></i>
+            <h4>Empowerment</h4>
+            <p>Enable both businesses and individuals to make informed choices.</p>
+          </div>
+          <div class="card">
+            <i class="fa fa-handshake-o"></i>
+            <h4>Partnership</h4>
+            <p>Build long-term relationships with clients and suppliers alike.</p>
+          </div>
+        </div>
       </div>
-    </section>
 
-    <!-- Values -->
-    <section class="section values">
+      <!-- Values Column -->
       <div>
         <h2>Our Values</h2>
-        <p>
-          Everything we do is guided by our core values — the principles that have defined us from the beginning and continue
-          to shape our journey today.
-        </p>
-        <div class="values-list">
-          <div class="value-card">
+        <div class="card-list">
+          <div class="card">
             <i class="fa fa-certificate"></i>
             <h4>Quality</h4>
             <p>We prioritize durability, design, and reliability in every product.</p>
           </div>
-          <div class="value-card">
+          <div class="card">
             <i class="fa fa-users"></i>
             <h4>Trust</h4>
             <p>We believe in lasting partnerships built on integrity and respect.</p>
           </div>
-          <div class="value-card">
+          <div class="card">
             <i class="fa fa-lightbulb-o"></i>
             <h4>Innovation</h4>
             <p>We bring forward-thinking products that inspire modern living.</p>
           </div>
-          <div class="value-card">
+          <div class="card">
             <i class="fa fa-heart"></i>
             <h4>Care</h4>
             <p>Every interaction reflects our commitment to service and satisfaction.</p>
