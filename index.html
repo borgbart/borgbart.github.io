@@ -11,89 +11,54 @@
     <link rel="icon" href="/images/favicon.png" type="image/x-icon">
 </head>
 
-<body>
-
-    <div id="login-overlay" class="login-overlay">
-        <div class="login-box">
-          <h2>Login</h2>
-          <input type="text" id="username" placeholder="Username" />
-          <input type="password" id="password" placeholder="Password" />
-          <button onclick="login()">Login</button>
-          <div class="error" id="error"></div>
-        </div>
-      </div>      
+<body>   
       
-    <div class="wrapper">
-        <!-- nav.html -->
-        <section class="home-header">
-            <div id="nav-container"></div>
+  <div class="wrapper">
+      <!-- nav.html -->
+      <section class="home-header">
+          <div id="nav-container"></div>
+      </section>
+  
+      <section class="hero">
+          <picture>
+            <!-- Web Version Image -->
+            <source media="(min-width: 768px)" srcset="images/pods_banner.png">
+            <!-- Mobile Version Image -->
+            <img src="/images/pods_mobilebanner.png" alt="Welcome Image" class="hero-image">
+          </picture>
         </section>
-    
-        <section class="hero">
-            <picture>
-              <!-- Web Version Image -->
-              <source media="(min-width: 768px)" srcset="images/pods_banner.png">
-              <!-- Mobile Version Image -->
-              <img src="/images/pods_mobilebanner.png" alt="Welcome Image" class="hero-image">
-            </picture>
-          </section>
 
-        <section class="body">
-            <!-- <div class="home-title"><h1>Categories</h1></div> -->
-            <div class="row">
-                <div class="col">
-                    <a href="workspace.html"><img src="images/workspace/workspace.png" alt=""></a>
-                    <div class="layer">
-                        <h3><a href="workspace.html">Workspace</a></h3>
-                    </div>
-                </div>
-                <div class="col">
-                    <a href="/interiors.html"><img src="/images/lifestyle.png" alt=""></a>
-                    <div class="layer">
-                        <h3><a href="/interiors.html">Interiors</a></h3>
-                    </div>
-                </div>
-                <div class="col">
-                    <a href="/outdoors.html"><img src="/images/outdoors.jpg" alt=""></a>
-                    <div class="layer">
-                        <h3><a href="/outdoors.html">Outdoors</a></h3>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
+      <section class="body">
+          <!-- <div class="home-title"><h1>Categories</h1></div> -->
+          <div class="row">
+              <div class="col">
+                  <a href="workspace.html"><img src="images/workspace/workspace.png" alt=""></a>
+                  <div class="layer">
+                      <h3><a href="workspace.html">Workspace</a></h3>
+                  </div>
+              </div>
+              <div class="col">
+                  <a href="/interiors.html"><img src="/images/lifestyle.png" alt=""></a>
+                  <div class="layer">
+                      <h3><a href="/interiors.html">Interiors</a></h3>
+                  </div>
+              </div>
+              <div class="col">
+                  <a href="/outdoors.html"><img src="/images/outdoors.jpg" alt=""></a>
+                  <div class="layer">
+                      <h3><a href="/outdoors.html">Outdoors</a></h3>
+                  </div>
+              </div>
+          </div>
+      </section>
+  </div>
 
-    <section class="home-header">
-        <div id="footer-container"></div>
-    </section>
+  <section class="home-header">
+      <div id="footer-container"></div>
+  </section>
 
-    <!-- Link to the external script file -->
-    <script src="/script.js"></script>
-
-    <script>
-        const VALID_USERNAME = "borgbarthet";
-        const VALID_PASSWORD = "bb2000";
-      
-        function login() {
-          const username = document.getElementById("username").value;
-          const password = document.getElementById("password").value;
-          const errorBox = document.getElementById("error");
-      
-          if (username === VALID_USERNAME && password === VALID_PASSWORD) {
-            localStorage.setItem("authenticated", "true");
-            document.getElementById("login-overlay").style.display = "none";
-          } else {
-            errorBox.textContent = "Invalid credentials. Please try again.";
-          }
-        }
-      
-        window.onload = function () {
-          const isAuthenticated = localStorage.getItem("authenticated");
-          if (isAuthenticated === "true") {
-            document.getElementById("login-overlay").style.display = "none";
-          }
-        };
-      </script>
+  <!-- Link to the external script file -->
+  <script src="/script.js"></script>
       
 </body>
 </html>
