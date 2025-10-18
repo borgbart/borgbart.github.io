@@ -2,25 +2,30 @@
 
 // Inject GA4 tracking code from external HTML file
 (function() {
-    fetch("/analytics/ga4.html")
-        .then(response => response.text())
-        .then(data => {
-            const tempDiv = document.createElement("div");
-            tempDiv.innerHTML = data;
+    fetch("/ga4.html")
+    .then(response => response.text())
+    .then(data => {
+        const tempDiv = document.createElement("div");
+        tempDiv.innerHTML = data;
 
-            // Append each script properly to <head>
-            tempDiv.querySelectorAll("script").forEach(script => {
-                const newScript = document.createElement("script");
-                if (script.src) {
-                    newScript.src = script.src;
-                    newScript.async = true;
-                } else {
-                    newScript.textContent = script.textContent;
-                }
-                document.head.appendChild(newScript);
-            });
-        })
-        .catch(err => console.error("Error loading GA4 tracking:", err));
+        tempDiv.querySelectorAll("script").forEach(script => {
+            const newScript = document.createElement("script");
+            if (script.src) {
+                newScript.src = script.src;
+                newScript.async = true;
+                // Make sure to fire pageview after loading external script
+                newScript.onload = () => {
+                    if (typeof gtag === "function") {
+                        gtag('event', 'page_view');
+                    }
+                };
+            } else {
+                newScript.textContent = script.textContent;
+            }
+            document.head.appendChild(newScript);
+        });
+    })
+    .catch(err => console.error("Error loading GA4 tracking:", err));
 })();
 
 // Function to toggle the side panel and hamburger menu
