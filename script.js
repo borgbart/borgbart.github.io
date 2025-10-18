@@ -1,5 +1,28 @@
 // scripts.js
 
+// Inject GA4 tracking code from external HTML file
+(function() {
+    fetch("/analytics/ga4.html")
+        .then(response => response.text())
+        .then(data => {
+            const tempDiv = document.createElement("div");
+            tempDiv.innerHTML = data;
+
+            // Append each script properly to <head>
+            tempDiv.querySelectorAll("script").forEach(script => {
+                const newScript = document.createElement("script");
+                if (script.src) {
+                    newScript.src = script.src;
+                    newScript.async = true;
+                } else {
+                    newScript.textContent = script.textContent;
+                }
+                document.head.appendChild(newScript);
+            });
+        })
+        .catch(err => console.error("Error loading GA4 tracking:", err));
+})();
+
 // Function to toggle the side panel and hamburger menu
 function toggleMenu() {
     var sidePanel = document.getElementById("sidePanel");
