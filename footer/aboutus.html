@@ -40,7 +40,7 @@
       height: 100%;
       object-fit: cover;
       filter: blur(6px);
-      transform: scale(1.05); /* optional zoom for better blur effect */
+      transform: scale(1.05);
     }
 
     .about-overlay {
@@ -80,7 +80,7 @@
     }
 
     .section.mission-section {
-        padding-bottom: 0; /* remove extra space below mission */
+      padding-bottom: 20px; /* smaller gap below mission */
     }
 
     .section h2 {
@@ -90,10 +90,6 @@
       font-weight: 700;
       color: #22333b;
     }
-
-    .section:hover p {
-        color: #fff;;
-    } 
 
     .section p {
       text-align: justify;
@@ -106,33 +102,35 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 40px;
-      margin-top: 60px;
+      margin-top: 20px; /* reduced gap */
       margin-bottom: 80px;
     }
 
     @media (max-width: 768px) {
       .two-columns {
         grid-template-columns: 1fr;
+        margin-top: 40px;
       }
     }
 
+    /* ---------- Card Grid ---------- */
     .card-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    align-items: stretch; /* <- this forces all cards to stretch to the same height */
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
     }
-
 
     .card {
       background: #f5f5f5;
       border-radius: 12px;
       padding: 25px;
-      width: 240px;
       text-align: center;
       transition: all 0.3s ease;
       box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      height: 100%; /* ensures all cards have same height */
     }
 
     .card:hover {
@@ -151,6 +149,14 @@
 
     .card:hover i {
       color: #fff;
+    }
+
+    .card h4 {
+      margin: 10px 0;
+    }
+
+    .card p {
+      margin: 0;
     }
   </style>
 </head>
