@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bb2000.com.mt/bb2000_sitemap.xml
